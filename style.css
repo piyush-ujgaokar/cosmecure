@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: auto;
+    background-color: #F1EDE7;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.nav-bar{
+    width: 100%;
+    height: 7vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    /* border-bottom: 1px solid #1F1F1F; */
+}
+
+.part-1{
+    display: flex;
+    gap: 20px;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+.part-1 h3{
+      font-size: 1.3rem;
+        font-weight: 400;
+}
+.part-2{
+    display: flex;
+    gap: 20px;
+   
+}
+.part-2 .btn{
+    padding: 7px 15px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    color: #FAF8F4;
+    background-color: #1F1F1F;
+}
+.line{
+    width: 94%;
+    height: 2px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #83817F;
+}
+
+.hero-sec{
+    width: 88%;
+    height: 70vh;
+    background-color: #F1EDE7;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+}
+
+.left-part{
+    width: 40%;
+    /* background-color: green; */
+    height: 100%;
+    position: relative;
+    z-index: 99;
+    
+}
+
+.left-part .text{
+   width: 100%;
+   /* background-color: brown; */
+  position: absolute;
+    top: 38%;
+    left: 37%; 
+   
+}
+.left-part h1{
+    font-size: 5.5rem;
+    font-weight: 300;
+    letter-spacing: 7px;
+    font-family: "Caveat", cursive;
+}
+.left-part span{
+    color: #FAF8F4;
+     font-style: italic;
+     font-family: "Playwrite AU QLD", cursive;
+}
+.left-part h2{
+    font-size: 5.5rem;
+    position: absolute;
+    left: 23%;
+     font-weight: 300;
+      font-family: "Caveat", cursive;
+}
+
+.right-part{
+    width: 60%;
+    height: 100%;
+    background-color: blue;
+    position: relative;
+}
+.right-part h1{
+    position: absolute;
+    top: 63%;
+    color: #FAF8F4;
+    font-size: 5.5rem;
+    font-weight: 300;
+    font-family: "Playwrite AU QLD", cursive;
+    font-style: italic;
+    left: 13%;
+}
+.right-part img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.info-part{
+    width: 88%;
+    height: auto;
+    /* background-color: red; */
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 50px;
+    display: flex;
+
+}
+
+.info-left-part{
+    width: 40%;
+    height: 20vh;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    gap: 6%;
+}
+
+.info-left-part .img-1{
+    width: 40%;
+    height: 90%;
+    background-color: blue;
+    border-radius: 30px;
+    overflow: hidden;
+
+}
+.img-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-right-part{
+    width: 60%;
+    height: 100%;
+    /* background-color: brown; */
+}
+
+.info-right-part .info-sec{
+    display: flex;
+    gap: 60px;
+    line-height: 1.2;
+}
+/* .info-sec .info {
+    gap: 100px;
+} */
+.info-sec .info h1{
+    font-size: 1.9rem;
+    color: #1F1F1F;
+    font-family: "Playwrite AU QLD", cursive;
+}
+.info-sec .info p{
+    font-size: 1rem;
+    font-family: "Caveat", cursive;
+    margin-top: 15px;
+   
+}
+
+
+.sections{
+    width: 88%;
+    height: 90vh;
+    /* background-color: red; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    gap: 80px;
+    margin-top: 100px;
+}
+
+.cosmetic{
+    width: 50%;
+    height: 98%;
+    position: relative;
+    background-color: #eadcc2b1;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.img-sec{
+    width: 100%;
+    height: 45%;
+    overflow: hidden;
+    /* background-color: blue; */
+}
+.img-sec img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cosmetic h1{
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: "Caveat", cursive;
+}
+.skin-care h1{
+     font-size: 3rem;
+    font-weight: 500;
+    font-family: "Caveat", cursive;
+}
+.cosmetic-info{
+    margin-top: 10px;
+    /* background-color: rgb(200, 123, 123); */
+    padding: 0px 50px;
+
+    
+}
+.cosmetic-info p{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-family: "Playwrite AU QLD", cursive;
+    font-style: italic;
+ 
+
+    
+}
+
+.know-btn{
+    font-size: 1.2rem;
+    padding: 10px 20px ;
+    border-radius: 30px;
+    background-color: #F3E9E1;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-10%);
+
+}
+span img{
+    width:20px;
+    
+}
+
+.skin-care{
+  width: 50%;
+    height: 98%;
+    position: relative;
+    background-color: #eadcc2b1;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.footer{
+    width: 100%;
+    height: 30vh;
+    margin-top: 100px;
+    display: flex;
+    background-color: #1F1F1F;
+}
+.left-footer{
+    width: 30%;
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left-footer a img{
+    width: 30px;
+}
+.footer-logo{
+    width: 30%;
+    height: 30%;
+    background-color: blue;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.footer-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-footer{
+    width: 70%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.about-contact{
+    display: flex;
+    gap: 100px;
+}
+
+.about-contact .company,.Get-In-Touch,.Team{
+   line-height: 1.6;
+}
+.about-contact .company,.Get-In-Touch,.Team h2{
+    color: #9d8585;
+    
+}
+.about-contact h2{
+    margin-bottom: 15px;
+}
+.company h2{
+    margin-bottom: 15px;
+}
+.Team h2{
+    margin-bottom: 15px;
+}
+.company a{
+        text-decoration: none;
+        color:#ECE1CE ;
+}
+.Get-In-Touch a{
+        text-decoration: none;
+        color:#ECE1CE ;
+}
+.Team a{
+        text-decoration: none;
+        color:#ECE1CE ;
+}
+
+
+.product-sec{
+    width: 88%;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
