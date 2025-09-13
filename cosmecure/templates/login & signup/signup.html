@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="../../static/css/login & signup/login.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <h2 class="form-title">Sign Up</h2>
+    <form id="signupForm">
+      <input type="text" placeholder="First Name" id="FirstName" class="input-field" required>
+      <input type="text" placeholder="Last Name" id="LastName" class="input-field" required>
+      <input type="email" placeholder="Email" id="email" class="input-field" required>
+      <input type="tel" id="phone" placeholder="Phone Number" pattern="[0-9]{10}" maxlength="10" title="Enter a 10-digit phone number" class="input-field" required>
+      <input type="password" placeholder="Set Password" id="password" class="input-field" required>
+      <input type="password" placeholder="Confirm Password" id="confirmPassword" class="input-field" required>
+      <button type="submit" id="signupBtn">Sign Up</button>
+    </form>
+    <p>
+      <span>Already have an account?</span>
+      <a href="./login.html" id="loginLink">Login</a>
+    </p>
+  </div>
+</body>
+</html>

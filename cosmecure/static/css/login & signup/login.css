@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ECE1CE;
+  color: #1F1F1F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #F1EDE7;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(61, 37, 19, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+.form-title {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="phone number"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  background-color: #FAF8F4;
+  border: 1px solid #ECE1CE;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+
+button {
+  background-color: #3d2513;
+  color: #FAF8F4;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #1F1F1F;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.checkbox input {
+  margin-right: 8px;
+}
+
+p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+a {
+  color: #3D2513;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
