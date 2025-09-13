@@ -21,3 +21,20 @@ toggleLink.addEventListener('click', function(e) {
   signupFields.classList.toggle('hidden');
   confirmPassword.classList.toggle('hidden');
 });
+
+
+authForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  if (!isLogin) {
+    const pass = document.getElementById('password').value;
+    const confirm = document.getElementById('confirmPassword').value;
+    if (pass !== confirm) {
+      alert("Passwords do not match.");
+      return;
+    }
+  }
+
+  alert(isLogin ? "Logged in successfully!" : "Signed up successfully!");
+  authForm.reset();
+});
