@@ -128,3 +128,151 @@ html,body{
     height: 100%;
     object-fit: cover;
 }
+
+
+
+.info-part{
+    width: 88%;
+    height: auto;
+    /* background-color: red; */
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 50px;
+    display: flex;
+
+}
+
+.info-left-part{
+    width: 40%;
+    height: 20vh;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    gap: 6%;
+}
+
+.info-left-part .img-1{
+    width: 40%;
+    height: 90%;
+    background-color: blue;
+    border-radius: 30px;
+    overflow: hidden;
+
+}
+.img-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-right-part{
+    width: 60%;
+    height: 100%;
+    /* background-color: brown; */
+}
+
+.info-right-part .info-sec{
+    display: flex;
+    gap: 60px;
+    line-height: 1.2;
+}
+/* .info-sec .info {
+    gap: 100px;
+} */
+.info-sec .info h1{
+    font-size: 1.9rem;
+    color: #1F1F1F;
+    font-family: "Playwrite AU QLD", cursive;
+}
+.info-sec .info p{
+    font-size: 1rem;
+    font-family: "Caveat", cursive;
+    margin-top: 15px;
+   
+}
+
+
+.sections{
+    width: 88%;
+    height: 90vh;
+    /* background-color: red; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    gap: 80px;
+    margin-top: 100px;
+}
+
+.cosmetic{
+    width: 50%;
+    height: 98%;
+    position: relative;
+    background-color: #eadcc2b1;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.img-sec{
+    width: 100%;
+    height: 45%;
+    overflow: hidden;
+    /* background-color: blue; */
+}
+.img-sec img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cosmetic h1{
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: "Caveat", cursive;
+}
+.skin-care h1{
+     font-size: 3rem;
+    font-weight: 500;
+    font-family: "Caveat", cursive;
+}
+.cosmetic-info{
+    margin-top: 10px;
+    /* background-color: rgb(200, 123, 123); */
+    padding: 0px 50px;
+
+    
+}
+.cosmetic-info p{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-family: "Playwrite AU QLD", cursive;
+    font-style: italic;
+ 
+
+    
+}
+
+.know-btn{
+    font-size: 1.2rem;
+    padding: 10px 20px ;
+    border-radius: 30px;
+    background-color: #F3E9E1;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-10%);
+
+}
+span img{
+    width:20px;
+    
+}
+
+.skin-care{
+  width: 50%;
+    height: 98%;
+    position: relative;
+    background-color: #eadcc2b1;
+    border-radius: 20px;
+    overflow: hidden;
+}
