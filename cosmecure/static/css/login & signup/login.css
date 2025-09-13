@@ -62,3 +62,22 @@ button:hover {
 .checkbox input {
   margin-right: 8px;
 }
+
+p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+a {
+  color: #3D2513;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
