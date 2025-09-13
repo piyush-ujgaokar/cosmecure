@@ -36,4 +36,16 @@ input[type="tel"] {
 }
 
 
+button {
+  background-color: #3d2513;
+  color: #FAF8F4;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 100%;
+}
+
 
