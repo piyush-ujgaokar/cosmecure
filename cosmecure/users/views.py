@@ -23,3 +23,4 @@ def signup_view(request):
         if users.objects.filter(email=email).exists():
             messages.error(request, "Email already registered.")
             return redirect('signup')
+        hashed_password = make_password(password)
