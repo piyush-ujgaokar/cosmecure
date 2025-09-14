@@ -46,4 +46,7 @@ def login_view(request):
                 return redirect('home')
             else:
                 messages.error(request, "Invalid password.")
+        except users.DoesNotExist:
+            messages.error(request, "User does not exist.")
+        return redirect('login')
             
