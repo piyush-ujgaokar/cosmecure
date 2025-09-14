@@ -20,3 +20,6 @@ def signup_view(request):
         if users.objects.filter(phone=phone).exists():
             messages.error(request, "Phone number already registered.")
             return redirect('signup')
+        if users.objects.filter(email=email).exists():
+            messages.error(request, "Email already registered.")
+            return redirect('signup')
