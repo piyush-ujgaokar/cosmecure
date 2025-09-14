@@ -12,145 +12,152 @@
     <p>Explore our range of skincare essentials</p>
   </header>
 
-  <!-- Filter Buttons -->
-  <div class="filter-buttons">
-    <button onclick="filterSection('all')">All</button>
-    <button onclick="filterSection('facewash-section')">Facewash</button>
-    <button onclick="filterSection('sunscreen-section')">Sunscreen</button>
-    <button onclick="filterSection('moisturizer-section')">Moisturizer</button>
+  <!-- Linking buttons for category pages -->
+  <div class="category-links" style="text-align:center; margin: 2rem 0 1rem;">
+    <a href="facewash.html" class="btn" style="margin:0 0.5rem;">Facewash</a>
+    <a href="sunscreen.html" class="btn" style="margin:0 0.5rem;">Sunscreen</a>
+    <a href="moisturizer.html" class="btn" style="margin:0 0.5rem;">Moisturizer</a>
   </div>
 
   <section class="products">
-    <!-- Facewash -->
-    <div id="facewash-section" class="product-section">
-      <h2>Facewash</h2>
-      <div class="card-container">
-        <div class="card">
-          <img src="../../static/images/skincare/facewash/product-1.webp" alt="Facewash">
-          <h3>Refreshing Facewash</h3>
-          <p>Gentle cleanser with aloe vera</p>
-          <span>₹299</span>
-          <button class="btn">Add to Cart</button>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/220x180" alt="Facewash">
-          <h3>Herbal Facewash</h3>
-          <p>Natural herbs for glowing skin</p>
-          <span>₹349</span>
-          <button class="btn">Add to Cart</button>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/220x180" alt="Facewash">
-          <h3>Charcoal Facewash</h3>
-          <p>Deep cleans dirt & oil</p>
-          <span>₹325</span>
-          <button class="btn">Add to Cart</button>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/220x180" alt="Facewash">
-          <h3>Oil Control Facewash</h3>
-          <p>Controls excess oil & acne</p>
-          <span>₹275</span>
-          <button class="btn">Add to Cart</button>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/220x180" alt="Facewash">
-          <h3>Brightening Facewash</h3>
-          <p>Removes dullness & refreshes</p>
-          <span>₹399</span>
-          <button class="btn">Add to Cart</button>
-        </div>
+    <div class="card-container">
+      <!-- Mixed Product Cards -->
+      <div class="card">
+        <img src="../../static/images/skincare/facewash/product-1.webp" alt="Ubtan Facewash">
+        <h3>Ubtan Facewash</h3>
+        <p>Brightens and exfoliates skin</p>
+        <span>₹299</span>
+        <button class="btn">Add to Cart</button>
       </div>
-    </div>
-
-    <!-- Sunscreen -->
-    <div id="sunscreen-section" class="product-section">
-      <h2>Sunscreen</h2>
-      <div class="card-container">
-        <div class="card">
-          <img src="https://via.placeholder.com/220x180" alt="Sunscreen">
-          <h3>SPF 50 Sunscreen</h3>
-          <p>Strong UV protection</p>
-          <span>₹599</span>
-          <button class="btn">Add to Cart</button>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/220x180" alt="Sunscreen">
-          <h3>Lightweight Sunscreen</h3>
-          <p>Non-greasy everyday use</p>
-          <span>₹499</span>
-          <button class="btn">Add to Cart</button>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/220x180" alt="Sunscreen">
-          <h3>Waterproof Sunscreen</h3>
-          <p>Perfect for outdoor activities</p>
-          <span>₹699</span>
-          <button class="btn">Add to Cart</button>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/220x180" alt="Sunscreen">
-          <h3>Matte Finish Sunscreen</h3>
-          <p>Great for oily skin</p>
-          <span>₹549</span>
-          <button class="btn">Add to Cart</button>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/220x180" alt="Sunscreen">
-          <h3>Tinted Sunscreen</h3>
-          <p>UV protection + natural glow</p>
-          <span>₹649</span>
-          <button class="btn">Add to Cart</button>
-        </div>
+      <div class="card">
+        <img src="../../static/images/skincare/moisturizer/product-1.jpg" alt="Hydrating Moisturizer">
+        <h3>Hydrating Moisturizer</h3>
+        <p>Soft & smooth skin all day</p>
+        <span>₹499</span>
+        <button class="btn">Add to Cart</button>
       </div>
-    </div>
-
-    <!-- Moisturizer -->
-    <div id="moisturizer-section" class="product-section">
-      <h2>Moisturizer</h2>
-      <div class="card-container">
-        <div class="card">
-          <img src="https://via.placeholder.com/220x180" alt="Moisturizer">
-          <h3>Hydrating Moisturizer</h3>
-          <p>Soft & smooth skin all day</p>
-          <span>₹499</span>
-          <button class="btn">Add to Cart</button>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/220x180" alt="Moisturizer">
-          <h3>Vitamin E Moisturizer</h3>
-          <p>Protects & nourishes skin</p>
-          <span>₹425</span>
-          <button class="btn">Add to Cart</button>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/220x180" alt="Moisturizer">
-          <h3>Night Repair Cream</h3>
-          <p>Overnight hydration boost</p>
-          <span>₹799</span>
-          <button class="btn">Add to Cart</button>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/220x180" alt="Moisturizer">
-          <h3>Shea Butter Lotion</h3>
-          <p>Intense hydration for dry skin</p>
-          <span>₹699</span>
-          <button class="btn">Add to Cart</button>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/220x180" alt="Moisturizer">
-          <h3>Aloe Moisturizer</h3>
-          <p>Light gel-based hydration</p>
-          <span>₹575</span>
-          <button class="btn">Add to Cart</button>
-        </div>
+      <div class="card">
+        <img src="../../static/images/skincare/sunscreen/product-1.webp" alt="SPF 50 Sunscreen">
+        <h3>SPF 50 Sunscreen</h3>
+        <p>Strong UV protection</p>
+        <span>₹599</span>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="../../static/images/skincare/facewash/product-2.jpg" alt="Charcoal Facewash">
+        <h3>Charcoal Facewash</h3>
+        <p>Deep cleans dirt & oil</p>
+        <span>₹325</span>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="../../static/images/skincare/moisturizer/product-2.webp" alt="Vitamin E Moisturizer">
+        <h3>Vitamin E Moisturizer</h3>
+        <p>Protects & nourishes skin</p>
+        <span>₹425</span>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="../../static/images/skincare/sunscreen/product-2.jpg" alt="Lightweight Sunscreen">
+        <h3>Lightweight Sunscreen</h3>
+        <p>Non-greasy everyday use</p>
+        <span>₹499</span>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="../../static/images/skincare/facewash/product-3.webp" alt="Neem Facewash">
+        <h3>Neem Facewash</h3>
+        <p>Fights acne & keeps skin clean</p>
+        <span>₹349</span>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="../../static/images/skincare/moisturizer/product-3.webp" alt="Night Repair Cream">
+        <h3>Night Repair Cream</h3>
+        <p>Overnight hydration boost</p>
+        <span>₹799</span>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="../../static/images/skincare/sunscreen/product-3.jpg" alt="Waterproof Sunscreen">
+        <h3>Waterproof Sunscreen</h3>
+        <p>Perfect for outdoor activities</p>
+        <span>₹699</span>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="../../static/images/skincare/facewash/product-4.webp" alt="Organic Facewash">
+        <h3>Organic Facewash</h3>
+        <p>Pure organic ingredients for gentle cleansing</p>
+        <span>₹375</span>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="../../static/images/skincare/moisturizer/product-4.avif" alt="Shea Butter Lotion">
+        <h3>Shea Butter Lotion</h3>
+        <p>Intense hydration for dry skin</p>
+        <span>₹699</span>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="../../static/images/skincare/sunscreen/product-4.webp" alt="Matte Finish Sunscreen">
+        <h3>Matte Finish Sunscreen</h3>
+        <p>Great for oily skin</p>
+        <span>₹549</span>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="../../static/images/skincare/facewash/product-5.jpg" alt="Herbal Facewash">
+        <h3>Herbal Facewash</h3>
+        <p>Natural herbs for glowing skin</p>
+        <span>₹349</span>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="../../static/images/skincare/moisturizer/product-5.avif" alt="Aloe Moisturizer">
+        <h3>Aloe Moisturizer</h3>
+        <p>Light gel-based hydration</p>
+        <span>₹575</span>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="../../static/images/skincare/sunscreen/product-5.webp" alt="Tinted Sunscreen">
+        <h3>Tinted Sunscreen</h3>
+        <p>UV protection + natural glow</p>
+        <span>₹649</span>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <!-- Add more mixed cards as needed -->
+      <div class="card">
+        <img src="../../static/images/skincare/facewash/product-8.webp" alt="Turmeric Facewash">
+        <h3>Turmeric Facewash</h3>
+        <p>Reduces inflammation & brightens skin</p>
+        <span>₹299</span>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="../../static/images/skincare/facewash/product-9.avif" alt="Aloe Vera Facewash">
+        <h3>Aloe Vera Facewash</h3>
+        <p>Gentle cleanser with aloe vera</p>
+        <span>₹275</span>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="../../static/images/skincare/facewash/product-7.jpg" alt="Vitamin C Facewash">
+        <h3>Vitamin C Facewash</h3>
+        <p>Brightens skin and reduces dullness</p>
+        <span>₹399</span>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="../../static/images/skincare/facewash/product-10.jpg" alt="Tea Tree Facewash">
+        <h3>Tea Tree Facewash</h3>
+        <p>Controls oil & fights pimples</p>
+        <span>₹325</span>
+        <button class="btn">Add to Cart</button>
       </div>
     </div>
   </section>
-
-  <footer>
-    <p>© 2025 Skincare Shop. All rights reserved.</p>
-  </footer>
 
   <script src="../../static/js/skincare/skincare.js"></script>
 </body>

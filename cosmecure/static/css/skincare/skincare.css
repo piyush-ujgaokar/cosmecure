@@ -1,4 +1,4 @@
-/* General Styling */
+
 * {
   margin: 0;
   padding: 0;
@@ -16,8 +16,10 @@ header {
   background: linear-gradient(135deg, #5ccfe6, #92e6a7);
   color: white;
   padding: 2rem 1rem;
+  margin-bottom: 10px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 header h1 {
@@ -36,25 +38,21 @@ h2 {
   font-size: 1.8rem;
 }
 
-/* Filter Buttons */
-.filter-buttons {
-  text-align: center;
-  margin: 1.5rem 0;
-}
-
-.filter-buttons button {
-  background: #0a9396;
-  color: white;
+.btn{
+   background: #ff91a4;
+  color: #fff;
   border: none;
+  border-bottom: 2px solid #ff6f91;
+  text-decoration: none;
   padding: 0.6rem 1.2rem;
-  margin: 0 0.5rem;
   border-radius: 25px;
   cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.filter-buttons button:hover {
-  background: #056666;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(255, 145, 164, 0.12);
+  display: inline-block; 
 }
 
 /* Product Cards */
@@ -71,7 +69,9 @@ h2 {
   background: #fff;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  width: 220px;
+  width: 280px;
+  height: 400px;
+  padding-top: 8px;
   text-align: center;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -79,7 +79,7 @@ h2 {
 
 .card img {
   width: 100%;
-  height: 180px;
+  height: 220px;
   object-fit: cover;
 }
 
@@ -125,12 +125,4 @@ h2 {
 .card .btn:hover {
   background: #ff6f91;
   transform: scale(1.07);
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #333;
-  color: white;
 }
