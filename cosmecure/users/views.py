@@ -1,4 +1,16 @@
 from django.shortcuts import render,redirect
 from .models import users
 from django.contrib import messages
+from django.contrib.auth.hashers import make_password,check_password
+
+
 # Create your views here.
+def signup_view(request):
+    if request.method == 'POST':
+        firstname = request.POST.get('Firstname')
+        lastname = request.POST.get('Lastname')
+        email= request.POST.get('email')
+        phone = request.POST.get('phone')
+        password = request.POST.get('password')
+        confirm_password = request.POST.get('confirmPassword')
+
