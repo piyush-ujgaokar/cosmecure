@@ -17,3 +17,6 @@ def signup_view(request):
         if password != confirm_password:
             messages.error(request, "Passwords do not match.")
             return redirect('signup')
+        if users.objects.filter(phone=phone).exists():
+            messages.error(request, "Phone number already registered.")
+            return redirect('signup')
