@@ -40,3 +40,7 @@ def login_view(request):
         password = request.POST.get('password')
         try:
             user = users.objects.get(email=email)
+            if check_password(password,user.password):
+                request.session['user_id']=user.id
+                messages.success(request, "Login successful!")
+                return redirect('home')
