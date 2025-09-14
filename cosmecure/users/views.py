@@ -44,3 +44,6 @@ def login_view(request):
                 request.session['user_id']=user.id
                 messages.success(request, "Login successful!")
                 return redirect('home')
+            else:
+                messages.error(request, "Invalid password.")
+            
