@@ -25,7 +25,8 @@ body {
 input[type="text"],
 input[type="password"],
 input[type="phone number"],
-input[type="tel"] {
+input[type="tel"],
+input[type="email"] {
   width: 100%;
   padding: 10px;
   margin: 8px 0;
