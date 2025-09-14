@@ -76,6 +76,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'cosmecure_db',
+        'USER': 'root',
+        'PASSWORD': 'Nilesh2706@',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
