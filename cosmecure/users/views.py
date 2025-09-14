@@ -24,3 +24,10 @@ def signup_view(request):
             messages.error(request, "Email already registered.")
             return redirect('signup')
         hashed_password = make_password(password)
+        users.objects.create(
+            firstname=firstname,
+            lastname=lastname,
+            email=email,
+            phone=phone,
+            password=hashed_password
+        )
