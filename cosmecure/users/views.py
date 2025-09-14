@@ -49,4 +49,5 @@ def login_view(request):
         except users.DoesNotExist:
             messages.error(request, "User does not exist.")
         return redirect('login')
+    return render(request, 'login & signup/login.html')
             
