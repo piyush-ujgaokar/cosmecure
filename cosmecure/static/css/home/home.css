@@ -40,6 +40,10 @@ html,body{
       font-size: 1.3rem;
         font-weight: 400;
 }
+.part-1 h3 a{
+    text-decoration: none;
+    color: #1f1f1f;
+}
 .part-2{
     display: flex;
     gap: 20px;
@@ -388,6 +392,10 @@ span img{
       cursor: pointer;
       background-color: #f1eeea;
     }
+    .card button a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
 
     .card:hover {
       transform: translateY(-10px) scale(1.05);
@@ -437,7 +445,7 @@ span img{
     }
 
     .btn:hover, .toggle-btn:hover {
-      background: #ff6f91;
+      background: #232121;
     }
 
     .toggle-container {
