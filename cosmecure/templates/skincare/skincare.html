@@ -7,154 +7,230 @@
   <link rel="stylesheet" href="../../static/css/skincare/skincare.css">
 </head>
 <body>
+   <div class="slider-container">
+    <div class="slider" id="slider">
+      <div class="slide"><img src="../../static/images/skincare/facewash/banner-1.avif" alt="Slide 1"></div>
+      <div class="slide"><img src="sunscreen.webp" alt="Slide 2"></div>
+      <div class="slide"><img src="moisturizer.jpg" alt="Slide 3"></div>
+      <div class="slide"><img src="face-wash.jpg" alt="Slide 4"></div>
+    </div>
+
+    <button class="btn btn-left" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="btn btn-right" onclick="moveSlide(1)">&#10095;</button>
+  </div>
   <header>
     <h1>🌿 Skincare Collection</h1>
     <p>Explore our range of skincare essentials</p>
   </header>
-
-  <!-- Linking buttons for category pages -->
-  <div class="category-links" style="text-align:center; margin: 2rem 0 1rem;">
+  
+   <div class="category-links" style="text-align:center; margin: 2rem 0 1rem;">
     <a href="facewash.html" class="btn" style="margin:0 0.5rem;">Facewash</a>
     <a href="sunscreen.html" class="btn" style="margin:0 0.5rem;">Sunscreen</a>
     <a href="moisturizer.html" class="btn" style="margin:0 0.5rem;">Moisturizer</a>
   </div>
 
+   <div class="search-sort-container">
+    <input type="text" id="searchBar" placeholder="Search products by name...">
+    <select id="sortOptions">
+      <option value="default">Sort By</option>
+      <option value="az">Name: A → Z</option>
+      <option value="za">Name: Z → A</option>
+      <option value="low-high">Price: Low → High</option>
+      <option value="high-low">Price: High → Low</option>
+    </select>
+    </div>
+
   <section class="products">
-    <div class="card-container">
-      <!-- Mixed Product Cards -->
+    <div class="card-container" id="productContainer">
       <div class="card">
         <img src="../../static/images/skincare/facewash/product-1.webp" alt="Ubtan Facewash">
-        <h3>Ubtan Facewash</h3>
+        <h3> Nivea Ubtan Facewash</h3>
         <p>Brightens and exfoliates skin</p>
         <span>₹299</span>
-        <button class="btn">Add to Cart</button>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
       </div>
       <div class="card">
         <img src="../../static/images/skincare/moisturizer/product-1.jpg" alt="Hydrating Moisturizer">
-        <h3>Hydrating Moisturizer</h3>
+        <h3> Undry Clinic Hydrating Moisturizer</h3>
         <p>Soft & smooth skin all day</p>
         <span>₹499</span>
-        <button class="btn">Add to Cart</button>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
       </div>
       <div class="card">
         <img src="../../static/images/skincare/sunscreen/product-1.webp" alt="SPF 50 Sunscreen">
-        <h3>SPF 50 Sunscreen</h3>
+        <h3> Bellavita SPF 50 Sunscreen</h3>
         <p>Strong UV protection</p>
         <span>₹599</span>
-        <button class="btn">Add to Cart</button>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
       </div>
       <div class="card">
         <img src="../../static/images/skincare/facewash/product-2.jpg" alt="Charcoal Facewash">
-        <h3>Charcoal Facewash</h3>
+        <h3> Mamaearth Charcoal Facewash</h3>
         <p>Deep cleans dirt & oil</p>
         <span>₹325</span>
-        <button class="btn">Add to Cart</button>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
       </div>
       <div class="card">
         <img src="../../static/images/skincare/moisturizer/product-2.webp" alt="Vitamin E Moisturizer">
-        <h3>Vitamin E Moisturizer</h3>
+        <h3> Blue Nector Vitamin E Moisturizer</h3>
         <p>Protects & nourishes skin</p>
         <span>₹425</span>
-        <button class="btn">Add to Cart</button>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
       </div>
       <div class="card">
         <img src="../../static/images/skincare/sunscreen/product-2.jpg" alt="Lightweight Sunscreen">
-        <h3>Lightweight Sunscreen</h3>
+        <h3>  Mamaearth Lightweight Sunscreen</h3>
         <p>Non-greasy everyday use</p>
         <span>₹499</span>
-        <button class="btn">Add to Cart</button>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
       </div>
       <div class="card">
         <img src="../../static/images/skincare/facewash/product-3.webp" alt="Neem Facewash">
-        <h3>Neem Facewash</h3>
+        <h3> Biotique Neem Facewash</h3>
         <p>Fights acne & keeps skin clean</p>
         <span>₹349</span>
-        <button class="btn">Add to Cart</button>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
       </div>
       <div class="card">
         <img src="../../static/images/skincare/moisturizer/product-3.webp" alt="Night Repair Cream">
         <h3>Night Repair Cream</h3>
         <p>Overnight hydration boost</p>
         <span>₹799</span>
-        <button class="btn">Add to Cart</button>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
       </div>
       <div class="card">
         <img src="../../static/images/skincare/sunscreen/product-3.jpg" alt="Waterproof Sunscreen">
         <h3>Waterproof Sunscreen</h3>
         <p>Perfect for outdoor activities</p>
         <span>₹699</span>
-        <button class="btn">Add to Cart</button>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
       </div>
       <div class="card">
         <img src="../../static/images/skincare/facewash/product-4.webp" alt="Organic Facewash">
         <h3>Organic Facewash</h3>
         <p>Pure organic ingredients for gentle cleansing</p>
         <span>₹375</span>
-        <button class="btn">Add to Cart</button>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
       </div>
       <div class="card">
         <img src="../../static/images/skincare/moisturizer/product-4.avif" alt="Shea Butter Lotion">
         <h3>Shea Butter Lotion</h3>
         <p>Intense hydration for dry skin</p>
         <span>₹699</span>
-        <button class="btn">Add to Cart</button>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
       </div>
       <div class="card">
         <img src="../../static/images/skincare/sunscreen/product-4.webp" alt="Matte Finish Sunscreen">
         <h3>Matte Finish Sunscreen</h3>
         <p>Great for oily skin</p>
         <span>₹549</span>
-        <button class="btn">Add to Cart</button>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
       </div>
       <div class="card">
         <img src="../../static/images/skincare/facewash/product-5.jpg" alt="Herbal Facewash">
         <h3>Herbal Facewash</h3>
         <p>Natural herbs for glowing skin</p>
         <span>₹349</span>
-        <button class="btn">Add to Cart</button>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
       </div>
       <div class="card">
         <img src="../../static/images/skincare/moisturizer/product-5.avif" alt="Aloe Moisturizer">
         <h3>Aloe Moisturizer</h3>
         <p>Light gel-based hydration</p>
         <span>₹575</span>
-        <button class="btn">Add to Cart</button>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
       </div>
       <div class="card">
         <img src="../../static/images/skincare/sunscreen/product-5.webp" alt="Tinted Sunscreen">
         <h3>Tinted Sunscreen</h3>
         <p>UV protection + natural glow</p>
         <span>₹649</span>
-        <button class="btn">Add to Cart</button>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
       </div>
-      <!-- Add more mixed cards as needed -->
       <div class="card">
         <img src="../../static/images/skincare/facewash/product-8.webp" alt="Turmeric Facewash">
         <h3>Turmeric Facewash</h3>
         <p>Reduces inflammation & brightens skin</p>
         <span>₹299</span>
-        <button class="btn">Add to Cart</button>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
       </div>
       <div class="card">
         <img src="../../static/images/skincare/facewash/product-9.avif" alt="Aloe Vera Facewash">
         <h3>Aloe Vera Facewash</h3>
         <p>Gentle cleanser with aloe vera</p>
         <span>₹275</span>
-        <button class="btn">Add to Cart</button>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
       </div>
       <div class="card">
         <img src="../../static/images/skincare/facewash/product-7.jpg" alt="Vitamin C Facewash">
         <h3>Vitamin C Facewash</h3>
         <p>Brightens skin and reduces dullness</p>
         <span>₹399</span>
-        <button class="btn">Add to Cart</button>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
       </div>
       <div class="card">
         <img src="../../static/images/skincare/facewash/product-10.jpg" alt="Tea Tree Facewash">
         <h3>Tea Tree Facewash</h3>
         <p>Controls oil & fights pimples</p>
         <span>₹325</span>
-        <button class="btn">Add to Cart</button>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
       </div>
     </div>
   </section>
