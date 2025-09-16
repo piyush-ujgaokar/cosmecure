@@ -1,5 +1,6 @@
 
         <!-- <div class="line"></div> -->
+{% load static %}
 {% extends 'base.html' %}
 {% block content %}
         <div class="hero-sec">
@@ -75,7 +76,7 @@
                         <p><span><img src="../../static/images/home/checkmark.png" alt=""></span>  Get Effective Result's</p>
                     </div>
 
-                    <button class="know-btn">Know More <span><img src="../../static/images/home/up-right-arrow.png" alt=""></span></button>
+                    <button class="know-btn"><a href="{% url 'skin_quiz' %}">Know More <span><img src="../../static/images/home/up-right-arrow.png" alt=""></span></a></button>
             </div>
         </div>
 
