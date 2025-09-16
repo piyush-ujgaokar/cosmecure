@@ -9,7 +9,8 @@
 <body>
   <div class="container">
     <h2 class="form-title">Sign Up</h2>
-    <form id="signupForm">
+    <form id="signupForm" method="POST">
+      {% csrf_token %}
       <input type="text" placeholder="First Name" id="FirstName" name="FirstName" class="input-field" required>
       <input type="text" placeholder="Last Name" id="LastName" name="LastName" class="input-field" required>
       <input type="email" placeholder="Email" id="email" name="email" class="input-field" required>
