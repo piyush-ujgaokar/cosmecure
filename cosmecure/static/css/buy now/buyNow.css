@@ -1,9 +1,9 @@
 :root {
     --primary-color: #6a1b9a;
     --primary-dark: #4a148c;
-    --secondary-color: #f4f4f9;
+    --secondary-color: #f1ede7;
     --text-color: #333;
-    --border-color: #ddd;
+    --border-color: #cec6fe;
     --disabled-color: #b0b0b0;
 }
 
@@ -33,7 +33,7 @@ body {
 .order-summary {
     flex: 1;
     min-width: 300px;
-    background-color: #9e0c0c;
+    background-color: #ECE1CE;
     padding: 25px;
     border-radius: 12px;
     border: 1px solid var(--border-color);
@@ -85,7 +85,7 @@ body {
 .input-wrapper select:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(106, 27, 154, 0.1);
+    box-shadow: 0 0 0 3px rgba(110, 34, 158, 0.1);
 }
 
 .input-grid {
@@ -109,7 +109,7 @@ body {
 .radio-group label:has(input:checked),
 .payment-option:has(input:checked) {
     border-color: var(--primary-color);
-    background-color: #f9f4fc;
+    background-color: #F9F4Fc;
 }
 
 .radio-group input[type="radio"],
