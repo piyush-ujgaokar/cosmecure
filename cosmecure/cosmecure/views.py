@@ -9,5 +9,5 @@ def home_view(request):
 def about_view(request):
     return render(request, 'aboutus/about.html')
 
-def quiz_view(request):
-    return render(request, 'quiz/quiz.html')
+def skin_quiz_view(request):
+    return render(request, 'quiz/skincare_Quiz.html')
