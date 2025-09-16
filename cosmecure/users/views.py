@@ -33,7 +33,7 @@ def signup_view(request):
         )
         messages.success(request, "Signup successful! Please log in.")
         return redirect('login')
-    renturn render(request, 'login & signup/signup.html')
+    return render(request, 'login & signup/signup.html')
 def login_view(request):
     if request.method=='POST':
         email = request.POST.get('email')
