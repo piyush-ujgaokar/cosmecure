@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy now</title>
+    <link rel="stylesheet" href="buynow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="checkout-form">
+            <header class="form-header">
+                <h1 class="logo">CosmeCure</h1>
+                <p class="breadcrumb">Cart > Information > Shipping > <strong>Payment</strong></p>
+                <h2>Your Personalized Curation is Almost Yours!</h2>
+                <p>Have an account? <a href="#">Log In</a></p>
+            </header>
+        </div>
+
+        <form action="#">
+            <section class="form-section">
+                <h3>1. Shipping Address</h3>
+                <div class="input-wrapper">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Your Full Name" required>
+                </div>
+                <div class="input-wrapper">
+                    <label for="phone">Mobile Number</label>
+                    <input type="tel" id="phone" placeholder="+91 98765 43210" pattern="[6-9]{1}[0-9]{9}" title="Please enter a valid 10-digit Indian mobile number" required>
+                </div>
+                <div class="input-wrapper">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="Street, House No., Area" required>
+                </div>
+                <div class="input-grid">
+                    <div class="input-wrapper">
+                        <label for="city">City</label>
+                        <input type="text" id="city" placeholder="e.g., Nagpur" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="pincode">PIN Code</label>
+                        <input type="text" id="pincode" placeholder="e.g., 440001" required>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </div>
+    
+</body>
+</html>
