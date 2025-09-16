@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skincare Products</title>
+  <link rel="stylesheet" href="../../../static/css/skincare/normal.css">
+</head>
+<body>
+  <div class="slider-container">
+    <div class="slider" id="slider">
+      <div class="slide"><img src="../../../static/images/skincare/facewash/facewash-Slide.webp" alt="Slide 1"></div>
+      <div class="slide"><img src="../../../static/images/skincare/sunscreen/sunscreen-slide.webp" alt="Slide 2"></div>
+      <div class="slide"><img src="../../../static/images/skincare/moisturizer/moisturizer-Slide.gif" alt="Slide 3"></div>
+      <div class="slide"><img src="../../../static/images/skincare/facewash/facewash-slide1.webp" alt="Slide 4"></div>
+    </div>
+    <button class="btn btn-left" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="btn btn-right" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+  <header>
+    <h1>🌿 Normal Skin Care Collection</h1>
+    <p>Recommended products for your skin type</p>
+  </header>
+  
+  <div class="category-links" style="text-align:center; margin: 2rem 0 1rem;">
+    <a href="facewash.html" class="btn" style="margin:0 0.5rem;">Facewash</a>
+    <a href="sunscreen.html" class="btn" style="margin:0 0.5rem;">Sunscreen</a>
+    <a href="moisturizer.html" class="btn" style="margin:0 0.5rem;">Moisturizer</a>
+  </div>
+
+  <div class="search-sort-container">
+    <input type="text" id="searchBar" placeholder="Search products by name...">
+    <select id="sortOptions">
+      <option value="default">Sort By</option>
+      <option value="az">Name: A → Z</option>
+      <option value="za">Name: Z → A</option>
+      <option value="low-high">Price: Low → High</option>
+      <option value="high-low">Price: High → Low</option>
+    </select>
+  </div>
+
+  <section class="products">
+    <div class="card-container" id="productContainer">
+      <!-- Only products suitable for normal skin type -->
+      <div class="card">
+        <img src="../../../static/images/skincare/facewash/product-1.webp" alt="Ubtan Facewash">
+        <h3>Nivea Ubtan Facewash</h3>
+        <p>Brightens and exfoliates skin. Gentle for daily use on normal skin.</p>
+        <span>₹299</span>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../../static/images/skincare/moisturizer/product-1.jpg" alt="Hydrating Moisturizer">
+        <h3>Undry Clinic Hydrating Moisturizer</h3>
+        <p>Soft & smooth skin all day. Perfect for balanced, normal skin.</p>
+        <span>₹499</span>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../../static/images/skincare/sunscreen/product-2.jpg" alt="Lightweight Sunscreen">
+        <h3>Mamaearth Lightweight Sunscreen</h3>
+        <p>Non-greasy everyday use. Ideal for normal skin protection.</p>
+        <span>₹499</span>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../../static/images/skincare/moisturizer/product-2.webp" alt="Vitamin E Moisturizer">
+        <h3>Blue Nector Vitamin E Moisturizer</h3>
+        <p>Protects & nourishes skin. Lightweight for normal skin types.</p>
+        <span>₹425</span>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../../static/images/skincare/facewash/product-5.jpg" alt="Herbal Facewash">
+        <h3>Herbal Facewash</h3>
+        <p>Natural herbs for glowing, healthy normal skin.</p>
+        <span>₹349</span>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../../static/images/skincare/sunscreen/product-4.webp" alt="Matte Finish Sunscreen">
+        <h3>Matte Finish Sunscreen</h3>
+        <p>Great for normal to oily skin, leaves no residue.</p>
+        <span>₹549</span>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../../static/images/skincare/moisturizer/product-5.avif" alt="Aloe Moisturizer">
+        <h3>Aloe Moisturizer</h3>
+        <p>Light gel-based hydration for normal skin comfort.</p>
+        <span>₹575</span>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: auto; margin-bottom: 1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../../../static/js/skincare/normal.js"></script>
+</body>
+</html>
