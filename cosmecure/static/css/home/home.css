@@ -21,8 +21,11 @@ html,body{
 
 .nav-bar{
     width: 100%;
-    height: 7vh;
-    /* background-color: red; */
+    height: 8vh;
+    background-color: #e3dacd;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,15 +33,44 @@ html,body{
     /* border-bottom: 1px solid #1F1F1F; */
 }
 
+.logo-sec{
+    width: 10%;
+    height: 90%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+}
+.logo-sec img{
+    width: 70%;
+    height: 80%;
+    /* background-color: green; */
+    object-fit: cover;
+}
+
 .part-1{
     display: flex;
-    gap: 20px;
+    gap: 40px;
+    /* background-color: red; */
+    height: 40px;
+    align-items: center;
     font-size: 1.3rem;
     font-weight: 100;
 }
 .part-1 h3{
-      font-size: 1.3rem;
-        font-weight: 400;
+    font-size: 1.3rem;
+    /* background-color: green; */
+    height: 60%;
+    cursor: pointer;
+    font-weight: 400;
+    transition: all 0.1s linear;
+}
+.part-1 h3:hover{
+    transform: scale(1.08);
+}
+.part-1 h3:hover{
+     border-bottom: 2px solid #3E2614;
+
 }
 .part-1 h3 a{
     text-decoration: none;
@@ -57,7 +89,11 @@ html,body{
     border: none;
     text-decoration: none;
     color: #FAF8F4;
+    transition: all 0.1s linear;
     background-color: #1F1F1F;
+}
+.part-2 .btn:hover{
+    transform: scale(1.08);
 }
 .line{
     width: 94%;
@@ -275,16 +311,14 @@ span img{
 }
 
 .skin-care{
-  width: 50%;
+    width: 50%;
     height: 90%;
     position: relative;
     background-color: #eadcc2b1;
     border-radius: 20px;
     overflow: hidden;
 }
-.know-btn:hover{
-   font-size: 1.3rem;
-}
+
 
 
 
