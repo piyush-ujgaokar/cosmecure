@@ -8,7 +8,8 @@
 <body>
   <div class="container">
     <h2 id="formTitle">Login</h2>
-    <form id="authForm">
+    <form id="authForm" method="POST">
+      {% csrf_token %}
       <div id="signupFields" class="hidden">
     <input type="text" placeholder="First Name" id="FirstName" class="input-field">
     <input type="text" placeholder="Last Name" id="LastName" class="input-field">

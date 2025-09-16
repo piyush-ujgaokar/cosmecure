@@ -3,7 +3,8 @@ from django.shortcuts import render
 
 
 def home_view(request):
-    return render(request, 'home/home.html')
+    if request.method == 'POST':
+        return render(request, 'home/home.html')
 
 def about_view(request):
     return render(request, 'aboutus/about.html')
