@@ -1,6 +1,3 @@
-/* Skincare CSS Styles */
-/*color- #ECE1CE,#1F1F1F,#F1EDE7,#FAF8F4,#3d2513,#FAF8F4 */
-
 
 * {
   margin: 0;
@@ -17,7 +14,9 @@ body {
 .slider-container {
       position: relative;
       width: 100%;
-      height: 60vh; /* full screen height */
+      margin-left: 60px;
+      margin-right: 60px;
+      height: 60vh; 
       overflow: hidden;
     }
 
@@ -123,8 +122,8 @@ h2 {
   background: #fff;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  width: 280px;
-  height: 400px;
+  width: 360px;
+  height: 440px;
   padding-top: 8px;
   text-align: center;
   overflow: hidden;
@@ -136,7 +135,7 @@ h2 {
 
 .card img {
   width: 100%;
-  height: 220px;
+  height: 250px;
   object-fit: cover;
 }
 
