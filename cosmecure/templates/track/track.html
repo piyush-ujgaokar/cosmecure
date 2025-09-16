@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Order Journey - CosmeCure</title>
+    <link rel="stylesheet" href="track.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="tracking-container">
+        <header class="tracking-header">
+            <div class="header-text">
+                <h1>Your Order is in Transit</h1>
+                <p>Order ID: <strong>#CURE789123</strong></p>
+            </div>
+            <div class="delivery-estimate">
+                <span>Expected Delivery</span>
+                <h3>Sept 18, 2025</h3>
+            </div>
+        </header>
+
+        <main class="tracking-body">
+            <div class="map-visual">
+                <div class="city start">
+                    <i class="fa-solid fa-warehouse"></i>
+                    <span>Nagpur, MH</span>
+                </div>
+                <div class="path">
+                    <div class="truck">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                </div>
+                <div class="city end">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <span>Your City</span>
+                </div>
+            </div>
+
+
+            <div class="progress-tracker">
+                <ul class="progress-steps" data-current-step="3"> <li class="step">
+                        <i class="fa-solid fa-box-archive"></i>
+                        <span>Order Placed</span>
+                    </li>
+                    <li class="step">
+                        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                        <span>Shipped</span>
+                    </li>
+                    <li class="step">
+                        <i class="fa-solid fa-truck-ramp-box"></i>
+                        <span>In Transit</span>
+                    </li>
+                    <li class="step">
+                        <i class="fa-solid fa-house-flag"></i>
+                        <span>Delivered</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tracking-history">
+                <h4>Tracking History</h4>
+                <ul>
+                    <li>
+                        <span class="history-time">Sept 15, 8:00 PM</span>
+                        <span class="history-status">Shipment has left our fulfillment center in Nagpur.</span>
+                    </li>
+                    <li>
+                        <span class="history-time">Sept 15, 4:30 PM</span>
+                        <span class="history-status">Your order has been packed and is ready for dispatch.</span>
+                    </li>
+                    <li>
+                        <span class="history-time">Sept 15, 2:15 PM</span>
+                        <span class="history-status">Order confirmed and payment received.</span>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
