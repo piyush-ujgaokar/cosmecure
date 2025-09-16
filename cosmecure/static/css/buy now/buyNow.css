@@ -61,3 +61,75 @@ body {
 .input-wrapper {
     margin-bottom: 15px;
 }
+
+.input-wrapper label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.input-wrapper input,
+.input-wrapper select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-wrapper input:focus,
+.input-wrapper select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(106, 27, 154, 0.1);
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* Shipping and Payment Options */
+.radio-group label,
+.payment-option {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.radio-group label:has(input:checked),
+.payment-option:has(input:checked) {
+    border-color: var(--primary-color);
+    background-color: #f9f4fc;
+}
+
+.radio-group input[type="radio"],
+.payment-option input[type="radio"] {
+    margin-right: 15px;
+    accent-color: var(--primary-color);
+}
+
+.payment-option.disabled {
+    cursor: not-allowed;
+    background-color: #f9f9f9;
+    color: var(--disabled-color);
+}
+
+.payment-option .coming-soon {
+    margin-left: auto;
+    background-color: #e9ecef;
+    color: #6c757d;
+    font-size: 0.75em;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 12px;
+}
