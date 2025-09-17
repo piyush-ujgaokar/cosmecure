@@ -16,3 +16,6 @@ def skin_type_products(request, skin_type):
             'skin_type_display': skin_type.capitalize()
         }
         return render(request, template_name, context)
+        else:
+        # If the skin type is invalid, return a 404 error
+        raise Http404("Skin type not found")
