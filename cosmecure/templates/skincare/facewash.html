@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facewash</title>
+    <link rel="stylesheet" href="../../static/css/skincare/facewash.css">
+</head>
+<body>
+
+  <section class="hero">
+    <h1>Facewash ✨</h1>
+    <p>Gentle cleansing for a fresh start.</p>
+  </section>    
+
+  <section class="products">
+    <div class="card">
+      <img src="../../static/images/skincare/facewash/product-5.jpg" alt="Facewash">
+      <h3>Herbal Facewash</h3>
+      <p>Infused with natural herbs for clear skin.</p>
+      <span class="price">₹299</span>
+      <button class="btn">Click Here</button>
+    </div>
+
+    <div class="card">
+      <img src="../../static/images/skincare/facewash/product-9.avif" alt="Facewash">
+      <h3>Aloe Vera Facewash</h3>
+      <p>Soothes & hydrates your skin deeply.</p>
+      <span class="price">₹249</span>
+      <button class="btn">Click Here</button>
+    </div>
+
+      <div class="card">
+        <img src="../../static/images/skincare/facewash/product-2.jpg" alt="Charcoal Facewash">
+        <h3>Charcoal Facewash</h3>
+        <p>Deep cleans dirt & oil</p>
+        <span>₹325</span>
+        <button class="btn">Add to Cart</button>
+      </div>
+
+       <div class="card">
+        <img src="../../static/images/skincare/facewash/product-7.jpg" alt="Vitamin C Facewash">
+        <h3>Vitamin C Facewash</h3>
+        <p>Brightens skin and reduces dullness</p>
+        <span>₹399</span>
+        <button class="btn">Add to Cart</button>
+      </div>
+
+   <div class="card">
+        <img src="../../static/images/skincare/facewash/product-3.webp" alt="Neem Facewash">
+        <h3>Neem Facewash</h3>
+        <p>Fights acne & keeps skin clean</p>
+        <span>₹349</span>
+        <button class="btn">Add to Cart</button>
+      </div>
+
+    <div class="card hidden">
+      <img src="../../static/images/skincare/facewash/product-11.webp" alt="Facewash">
+      <h3>Foaming Facewash</h3>
+      <p>Soft foam removes impurities gently.</p>
+      <span class="price">₹699</span>
+      <button class="btn">Click Here</button>
+    </div>
+    <div class="card hidden">
+      <img src="../../static/images/skincare/facewash/product-12.webp" alt="Facewash">
+      <h3>Exfoliating Facewash</h3>
+      <p>Removes dead skin cells for a smooth feel.</p>
+      <span class="price">₹549</span>
+      <button class="btn">Click Here</button>
+    </div>
+      <div class="card">
+        <img src="../../static/images/skincare/facewash/product-13.jpg" alt="Rose Facewash">
+        <h3>Rose Facewash</h3>
+        <p>Hydrates & refreshes skin</p>
+        <span class="price">₹379</span>
+      </div>
+  </section>
+
+  <div class="toggle-container">
+    <button id="toggle-btn" class="toggle-btn">View All Products</button>
+  </div>
+  <script src="../../static/js/skincare/facewash.js"></script>
+</body>
+</html>
+{% endblock %}

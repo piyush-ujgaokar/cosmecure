@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../static/css/quiz/skincare_quiz.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+
+        <h1>Know Your skin Type</h1>
+
+
+        <div class="question active" data-question="q1">
+            <p>1. How does your skin feel a few hours after washing your face?</p>
+            <label class="option">
+                <input type="radio" name="q1" value="oily">
+                <img src="oily.jpg" alt="Oily"> Greasy/Shiny
+            </label>
+            <label class="option">
+                <input type="radio" name="q1" value="dry">
+                <img src="dry.jpg" alt="Dry"> Tight/Dry
+            </label>
+            <label class="option">
+                <input type="radio" name="q1" value="normal">
+                <img src="normal.jpg" alt="Normal"> Comfortable/Soft
+            </label>
+            <label class="option">
+                <input type="radio" name="q1" value="combination">
+                <img src="combination.jpg" alt="Combination"> Oily in some areas, dry in others
+            </label>
+        </div>
+
+        <div class="question" data-question="q2">
+            <p>2. Do you often get pimples or acne?</p>
+            <label class="option">
+                <input type="radio" name="q2" value="oily">
+                <img src="oily.jpg" alt="Oily"> Very often
+            </label>
+            <label class="option">
+                <input type="radio" name="q2" value="combination">
+                <img src="combination.jpg" alt="Combination"> Sometimes, only in T-zone
+            </label>
+            <label class="option">
+                <input type="radio" name="q2" value="normal">
+                <img src="normal.jpg" alt="Normal"> Rarely
+            </label>
+            <label class="option">
+                <input type="radio" name="q2" value="dry">
+                <img src="dry.jpg" alt="Dry"> Almost never
+            </label>
+        </div>
+
+        <div class="question" data-question="q3">
+            <p>3. How does your skin react to moisturizers?</p>
+            <label class="option">
+                <input type="radio" name="q3" value="dry">
+                <img src="dry.jpg" alt="Dry"> Absorbs quickly, feels better
+            </label>
+            <label class="option">
+                <input type="radio" name="q3" value="oily">
+                <img src="oily.jpg" alt="Oily"> Feels greasy after applying
+            </label>
+            <label class="option">
+                <input type="radio" name="q3" value="normal">
+                <img src="normal.jpg" alt="Normal"> Feels smooth and balanced
+            </label>
+            <label class="option">
+                <input type="radio" name="q3" value="combination">
+                <img src="combination.jpg" alt="Combination"> Some areas need more, others feel greasy
+            </label>
+        </div>
+
+        <div id="result"></div>
+
+        <button id="getProductBtn" style="display: none;">Get Your Product</button>
+
+    </div>
+    <script src="../../static/js/quiz/skincare_Quiz.js"></script>
+</body>
+
+</html>

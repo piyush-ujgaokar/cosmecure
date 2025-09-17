@@ -21,8 +21,11 @@ html,body{
 
 .nav-bar{
     width: 100%;
-    height: 7vh;
-    /* background-color: red; */
+    height: 8vh;
+    background-color: #e3dacd;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,15 +33,48 @@ html,body{
     /* border-bottom: 1px solid #1F1F1F; */
 }
 
+.logo-sec{
+    width: 10%;
+    height: 90%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+}
+.logo-sec img{
+    width: 70%;
+    height: 80%;
+    /* background-color: green; */
+    object-fit: cover;
+}
+
 .part-1{
     display: flex;
-    gap: 20px;
+    gap: 40px;
+    /* background-color: red; */
+    height: 40px;
+    align-items: center;
     font-size: 1.3rem;
     font-weight: 100;
 }
 .part-1 h3{
-      font-size: 1.3rem;
-        font-weight: 400;
+    font-size: 1.3rem;
+    /* background-color: green; */
+    height: 60%;
+    cursor: pointer;
+    font-weight: 400;
+    transition: all 0.1s linear;
+}
+.part-1 h3:hover{
+    transform: scale(1.08);
+}
+.part-1 h3:hover{
+     border-bottom: 2px solid #3E2614;
+
+}
+.part-1 h3 a{
+    text-decoration: none;
+    color: #1f1f1f;
 }
 .part-2{
     display: flex;
@@ -51,8 +87,13 @@ html,body{
     font-size: 1.2rem;
     outline: none;
     border: none;
+    text-decoration: none;
     color: #FAF8F4;
+    transition: all 0.1s linear;
     background-color: #1F1F1F;
+}
+.part-2 .btn:hover{
+    transform: scale(1.08);
 }
 .line{
     width: 94%;
@@ -194,7 +235,7 @@ html,body{
 
 .sections{
     width: 88%;
-    height: 90vh;
+    height: 100vh;
     /* background-color: red; */
     margin: auto;
     display: flex;
@@ -207,7 +248,7 @@ html,body{
 
 .cosmetic{
     width: 50%;
-    height: 98%;
+    height: 90%;
     position: relative;
     background-color: #eadcc2b1;
     border-radius: 20px;
@@ -261,6 +302,7 @@ html,body{
     bottom: 0;
     left: 50%;
     transform: translate(-50%,-10%);
+    transition: all 0.1s linear;
 
 }
 span img{
@@ -269,8 +311,8 @@ span img{
 }
 
 .skin-care{
-  width: 50%;
-    height: 98%;
+    width: 50%;
+    height: 90%;
     position: relative;
     background-color: #eadcc2b1;
     border-radius: 20px;
@@ -279,11 +321,15 @@ span img{
 
 
 
+
 .footer{
     width: 100%;
     height: 30vh;
     margin-top: 100px;
     display: flex;
+    position: static;
+    bottom: 0;
+
     background-color: #1F1F1F;
 }
 .left-footer{
@@ -355,8 +401,98 @@ span img{
 
 .product-sec{
     width: 88%;
-    height: 100vh;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    margin: auto;
 }
 
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+      /* background-color: green; */
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 1.5rem;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      background-color: #f1eeea;
+    }
+    .card button a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+      transition: transform 0.6s ease;
+    }
+    .card img:hover {
+      transform: scale(1.1);
+    }
+
+    .card h3 {
+      margin: 0.5rem 0;
+      font-size: 1.3rem;
+      color: #444;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+
+    .price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #ff6f91;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .btn, .toggle-btn {
+      background: #ff91a4;
+      color: #fff;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover, .toggle-btn:hover {
+      background: #232121;
+    }
+
+    .toggle-container {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .hidden {
+      display: none;
+    }
 
 
