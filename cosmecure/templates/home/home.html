@@ -1,9 +1,32 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CosmeCure</title>
+    <link rel="stylesheet" href="../../static/css/profile System/profileSystem.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="nav-bar">
+            <div class="logo-sec">
+                <img src="../../static/images/home/logo_main.png" alt="">
+            </div>
+            <div class="part-1">
+                <h3>Home</h3>
+                <h3>Products</h3>
+                <h3><a href="../aboutus/about.html">About us</a></h3>
+                <h3><a href="../aboutus/about.html">Contact us</a></h3>
+            </div>
+         <div class="part-2">
+              <div class="profile">
+                        <img src="../../static/images/profile system/profile-user (1).png" alt="">
+                 </div>
+            </div>
+        </div>
         <!-- <div class="line"></div> -->
 
-{% extends 'base.html' %}
-{% block content %}
-{% load static %}
         <div class="hero-sec">
             <div class="left-part">
                 <div class="text">
@@ -61,7 +84,8 @@
                         <p><span><img src="../../static/images/home/checkmark.png" alt=""></span>Go Through Quiz</p>
                         <p><span><img src="../../static/images/home/checkmark.png" alt=""></span>Get Effective Result's</p>
                     </div>
-                    <button class="know-btn">Know More <span><img src="../../static/images/home/up-right-arrow.png" alt=""></span></button>
+                    <button class="know-btn">Know More <span><img src="../../static/images/home/up-right-arrow.png" alt="">
+                    </span></button>
             </div>
             <div class="skin-care">
                       <div class="img-sec">
@@ -77,7 +101,8 @@
                         <p><span><img src="../../static/images/home/checkmark.png" alt=""></span>  Get Effective Result's</p>
                     </div>
 
-                    <button class="know-btn"><a href="{% url 'skin_quiz' %}">Know More <span><img src="../../static/images/home/up-right-arrow.png" alt=""></span></a></button>
+                    <button class="know-btn">Know More <span><img src="../../static/images/home/up-right-arrow.png" alt="">
+                    </span></button>
             </div>
         </div>
 
@@ -178,10 +203,9 @@
 
             </section>
         </div>
-
+</div>
         
 
 <script src=""></script>
 </body>
 </html>
-{% endblock %}
