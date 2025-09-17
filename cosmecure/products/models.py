@@ -8,3 +8,6 @@ class Product(models.Model):
     image_url = models.CharField(max_length=255)
     skin_type = models.CharField(max_length=50)
     category = models.CharField(max_length=50)
+
+   def __str__(self):
+        return self.name
