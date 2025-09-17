@@ -28,6 +28,7 @@ def signup_view(request):
         users.objects.create(#new instance of user,save it directly to db
             firstname=firstname,
             lastname=lastname,
+            username=email,
             email=email,
             phone=phone,
             password=hashed_password
@@ -39,7 +40,7 @@ def login_view(request):
     if request.method=='POST':
         email = request.POST.get('email')
         password = request.POST.get('password')
-        user = authenticate(request, email=email, password=password)
+        user = authenticate(request, username=email, password=password)
         if user is not None:
             login(request, user)
             return redirect('home')
