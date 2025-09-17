@@ -9,3 +9,10 @@ def skin_type_products(request, skin_type):
         'combination': 'products/combination_products.html',
         'normal': 'products/normal_products.html',
     }
+        if skin_type in template_map:
+        template_name = template_map[skin_type]
+        # You can pass context data to the template if needed
+        context = {
+            'skin_type_display': skin_type.capitalize()
+        }
+        return render(request, template_name, context)
