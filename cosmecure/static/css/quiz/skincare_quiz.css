@@ -28,3 +28,25 @@ h1 {
   display: none;
   font-size: 20px;
 }
+
+.question.active {
+  display: block;
+}
+
+.option {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #1F1F1F;
+  padding: 8px;
+  margin: 9px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.option:hover {
+ background-color: #3d2513;
+ color: #ECE1CE;
+ 
+}
