@@ -38,6 +38,6 @@ function showResult() {
 
   );
 
-  window.location.href = `/skincare/sub-page/${skinType}/`;
+  window.location.href = `/products/${skinType}`;
 }
 
