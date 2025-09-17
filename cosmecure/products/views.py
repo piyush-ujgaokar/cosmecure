@@ -1,6 +1,5 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
+from models import Product
 
 
 # Create your views here.
-def normal_skincare(request):
-    return render(request, 'skincare/normal.html')
