@@ -1,4 +1,4 @@
-/* General Styling */
+
 body {
   font-family: Arial, sans-serif;
   background-color: #F0ECE6;
@@ -26,7 +26,7 @@ body {
   text-align: center;
 }
 
-/* Profile Image */
+
 .profile-image {
   position: relative;
 }
@@ -51,7 +51,7 @@ body {
   display: none;
 }
 
-/* For textarea */
+
 .textarea-input {
   resize: vertical;
   min-height: 60px;
@@ -64,7 +64,7 @@ body {
   word-break: break-word;
 }
 
-/* Button group styling */
+
 .btn-group {
   display: flex;
   gap: 6px;
@@ -76,11 +76,10 @@ body {
   font-size: 1rem;
   padding: 3px 6px;
   border-radius: 6px;
-  display: none; /* Hidden until editing */
+  display: none; 
 }
 
 
-/* Info Fields */
 .profile-info {
   margin-top: 20px;
   text-align: left;
@@ -89,8 +88,6 @@ body {
   margin: 12px 0;
   display: flex;
   max-width: 90%;
-  /* overflow-x: scroll;
-  background-color: red; */
   align-items: center;
   justify-content: space-between;
 }
@@ -118,25 +115,25 @@ body {
   background: #FAF8F4;
   color: #1F1F1F;
 }
-/* For address text (fixed box, scrollable if overflow) */
+
 #addressText {
   display: block;
-  max-width: 260px;       /* fixed width */
-  max-height: 70px;       /* fixed height */
-  overflow-y: auto;       /* vertical scrollbar if text is long */
-  overflow-x: hidden;     /* no horizontal scroll */
-  white-space: pre-wrap;  /* wrap text inside box */
+  max-width: 260px;       
+  max-height: 70px;      
+  overflow-y: auto;       
+  overflow-x: hidden;     
+  white-space: pre-wrap; 
   word-wrap: break-word;
-  padding-right: 5px;     /* space before scrollbar */
+  padding-right: 5px;     
 }
 #addressText::-webkit-scrollbar{
    display: none;
 }
 
-/* Align edit buttons consistently */
+
 .info-field {
   display: flex;
-  align-items: flex-start;  /* align from top */
+  align-items: flex-start;  
   justify-content: space-between;
 }
 
@@ -147,19 +144,19 @@ body {
 }
 
 
-/* Prevent overflow of text inside card */
+
 .info-field span {
   flex: 2;
   color: #3D2513;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  white-space: normal;   /* allow wrapping */
-  max-width: 100%;       /* limit within container */
+  white-space: normal;   
+  max-width: 100%;       
   display: inline-block;
 }
 
 
-/* Logout Button */
+
 .logout-btn {
   margin-top: 20px;
   padding: 10px 20px;
@@ -174,7 +171,7 @@ body {
   background: #1F1F1F;
 }
 
-/* Responsive */
+
 @media (max-width: 500px) {
   .profile-card {
     padding: 1rem;
