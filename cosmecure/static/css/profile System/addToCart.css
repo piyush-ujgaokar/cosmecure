@@ -8,7 +8,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #FAF8F4;
   color: #1F1F1F;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .cart-container {
@@ -73,3 +73,111 @@ body {
 .buy-btn:hover, .remove-btn:hover {
   background: #1F1F1F;
 }
+
+
+
+.nav-bar{
+    width: 100vw;
+    height: 8vh;
+    background-color: #e3dacd;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    align-items: center;
+    padding: 0px 30px;
+    margin-bottom: 50px;
+    /* border-bottom: 1px solid #1F1F1F; */
+}
+
+.logo-sec{
+    width: 10%;
+    height: 90%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.logo-sec img{
+    width: 70%;
+    height: 85%;
+    /* background-color: green; */
+    object-fit: cover;
+}
+
+.part-1{
+    display: flex;
+    gap: 40px;
+    /* background-color: red; */
+    height: 40px;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.part-1 h3{
+    font-size: 1.3rem;
+    /* background-color: green; */
+    height: 60%;
+    cursor: pointer;
+    font-weight: 400;
+    transition: all 0.1s linear;
+}
+.part-1 a{
+    text-decoration: none;
+    color: #3d2513;
+}
+.part-1 h3:hover{
+    transform: scale(1.08);
+}
+.part-1 h3:hover{
+     border-bottom: 2px solid #3E2614;
+
+}
+.part-1 h3 a{
+    text-decoration: none;
+    color: #1f1f1f;
+}
+.part-2{
+    width:12%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    gap: 2.5rem;
+   
+}
+
+
+.part-2 .profile{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* background-color: red; */
+}
+ .profile img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+ }
+ .profile a{
+    text-decoration: none;
+    color: #1F1F1F;
+ }
+ .profile p{
+    margin-left: 8px;
+    font-size: 15px;
+ }
+
+ .profile img:hover{
+    cursor: pointer;
+ }
+
