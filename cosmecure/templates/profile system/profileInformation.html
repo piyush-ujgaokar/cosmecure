@@ -17,42 +17,59 @@
       </div>
 
       <div class="profile-info">
+      
         <div class="info-field">
           <label>Name:</label>
           <span id="nameText">Piyush</span>
           <input type="text" id="nameInput" class="edit-input" value="Piyush">
-          <button class="edit-btn" onclick="editField('name')">✏️</button>
+          <div class="btn-group">
+            <button class="edit-btn" onclick="enableEdit('name')">✏️</button>
+            <button class="set-btn" onclick="setField('name')">✔️</button>
+          </div>
         </div>
 
+       
         <div class="info-field">
           <label>Email:</label>
           <span id="emailText">piyush@example.com</span>
           <input type="email" id="emailInput" class="edit-input" value="piyush@example.com">
-          <button class="edit-btn" onclick="editField('email')">✏️</button>
+          <div class="btn-group">
+            <button class="edit-btn" onclick="enableEdit('email')">✏️</button>
+            <button class="set-btn" onclick="setField('email')">✔️</button>
+          </div>
         </div>
 
+      
         <div class="info-field">
           <label>Age:</label>
           <span id="ageText">20</span>
           <input type="number" id="ageInput" class="edit-input" value="20">
-          <button class="edit-btn" onclick="editField('age')">✏️</button>
+          <div class="btn-group">
+            <button class="edit-btn" onclick="enableEdit('age')">✏️</button>
+            <button class="set-btn" onclick="setField('age')">✔️</button>
+          </div>
         </div>
 
-    <div class="info-field">
-        <label>Address:</label>
-        <span id="addressText">Delhi, India</span>
-        <textarea id="addressInput" class="edit-input textarea-input">Delhi, India</textarea>
-        <div class="btn-group">
-          <button class="edit-btn" onclick="enableEdit('address')">✏️</button>
-          <button class="set-btn" onclick="setField('address')">✔️</button>
+      
+        <div class="info-field">
+          <label>Address:</label>
+          <span id="addressText">Delhi, India</span>
+          <textarea id="addressInput" class="edit-input textarea-input">Delhi, India</textarea>
+          <div class="btn-group">
+            <button class="edit-btn" onclick="enableEdit('address')">✏️</button>
+            <button class="set-btn" onclick="setField('address')">✔️</button>
+          </div>
         </div>
-    </div>
 
+    
         <div class="info-field">
           <label>Mobile:</label>
           <span id="mobileText">+91 9876543210</span>
           <input type="text" id="mobileInput" class="edit-input" value="+91 9876543210">
-          <button class="edit-btn" onclick="editField('mobile')">✏️</button>
+          <div class="btn-group">
+            <button class="edit-btn" onclick="enableEdit('mobile')">✏️</button>
+            <button class="set-btn" onclick="setField('mobile')">✔️</button>
+          </div>
         </div>
       </div>
 
