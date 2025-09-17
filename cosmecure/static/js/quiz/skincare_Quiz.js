@@ -25,3 +25,22 @@ questions.forEach((q, index) => {
   });
 
 });
+
+function showResult() {
+
+  let score = { oily: 0, dry: 0, normal: 0, combination: 0 };
+
+  Object.values(answers).forEach(a => score[a]++);
+
+  let skinType = Object.keys(score).reduce((a, b) =>
+
+    score[a] > score[b] ? a : b
+
+  );
+
+  document.getElementById("result").textContent =
+
+    "✅ Your Skin Type: " + skinType.toUpperCase();
+     getProductBtn.style.display = 'block';
+}
+
