@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #6a1b9a;
-    --secondary-color: #28a745; /* Green for success */
+    --primary-color: #93623d;
+    --secondary-color: #2bc64f;
     --background-color: #f0f2f5;
     --card-bg: #ffffff;
     --text-dark: #333;
     --text-light: #777;
-    --border-color: #e9ecef;
+    --border-color: #c6a78f;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
 }
 
 .tracking-header {
-    background: linear-gradient(135deg, var(--primary-color), #8e44ad);
+    background: linear-gradient(135deg, var(--primary-color), #93623d);
     color: #fff;
     padding: 25px 30px;
     display: flex;
@@ -60,7 +60,6 @@ body {
     padding: 30px;
 }
 
-/* Map Visualization */
 .map-visual {
     display: flex;
     justify-content: space-between;
@@ -93,32 +92,31 @@ body {
     top: -15px;
 }
 
-/* Truck Icon and Animation */
+
 .map-visual .truck {
     position: absolute;
-    top: -15px;
+    top: -10px;
     left: 0;
-    transform: translateX(-50%);
+    transform: translateX(-60%);
     color: var(--primary-color);
     font-size: 2em;
     z-index: 10;
-    animation: drive-halfway 4s ease-in-out infinite; /* Updated animation name */
+    animation: drive-halfway 4s ease-in-out infinite; 
 }
 
-/* === UPDATED KEYFRAME === */
-/* This animation now moves the truck to the halfway point (50%) and repeats */
+
 @keyframes drive-halfway {
     0% {
-        transform: translateX(0%); /* Starts at the beginning */
+        transform: translateX(0%);
     }
     100% {
-        transform: translateX(calc(50vw - 150px)); /* Moves to the middle */
-        /* Note: Adjust the '150px' value if needed to perfectly center it */
+        transform: translateX(calc(50vw - 150px)); 
+        
     }
 }
 
 
-/* Progress Tracker */
+
 .progress-tracker {
     position: relative;
     margin: 30px 0;
@@ -211,7 +209,7 @@ body {
 }
 
 
-/* Tracking History */
+
 .tracking-history {
     margin-top: 40px;
 }
@@ -244,7 +242,7 @@ body {
     color: var(--text-dark);
 }
 
-/* --- Responsive Design --- */
+
 @media (max-width: 600px) {
     .tracking-header {
         flex-direction: column;
