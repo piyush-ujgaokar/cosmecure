@@ -4,10 +4,10 @@ from django.http import Http404
 def skin_type_products(request, skin_type):
     # Define a map to link skin types to specific templates
     template_map = {
-        'oily': 'products/oily_products.html',
-        'dry': 'products/dry_products.html',
-        'combination': 'products/combination_products.html',
-        'normal': 'products/normal_products.html',
+        'oily': 'skincare/sub-page/oily.html',
+        'dry': 'skincare/sub-page/dry.html',
+        'combination': 'skincare/sub-page/combination.html',
+        'normal': 'skincare/sub-page/normal.html',
     }
         if skin_type in template_map:
         template_name = template_map[skin_type]

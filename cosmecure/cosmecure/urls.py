@@ -25,5 +25,6 @@ urlpatterns = [
     path('', views.home_view, name='home'),
     path('about/', views.about_view, name='about'),
     path('skin_quiz/', views.skin_quiz_view, name='skin_quiz'),
+    path('', include('products.urls')),
     
 ]
