@@ -1,39 +1,41 @@
- header {
-      text-align: center;
-      padding: 20px;
-      background: #93623d;
+header {
+      background: #8b5e34;
       color: white;
+      text-align: center;
+      padding: 30px 20px;
     }
-
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    header p {
+      margin-top: 5px;
+      font-size: 16px;
+    }
     .controls {
-      padding: 20px;
+      margin: 24px 0 10px 0;
+    }
+    .controls > div {
       text-align: center;
-      background: #fff;
-      border-bottom: 1px solid #ddd;
     }
-
     .filter-btn {
-      padding: 10px 15px;
       margin: 5px;
+      padding: 8px 18px;
       border: none;
-      border-radius: 8px;
-      background: #3d2513;
+      border-radius: 20px;
+      background: #8b5e34;
       color: white;
-      font-weight: bold;
       cursor: pointer;
-      transition: all 0.3s ease;
+      font-size: 15px;
+      transition: background 0.2s;
     }
-
     .filter-btn.active,
     .filter-btn:hover {
-      background: #66462d;
-      transform: scale(1.05);
-      box-shadow: 0 4px 12px rgba(102, 70, 45, 0.3);
+      background: #5a3820;
     }
-
-   .search-sort-container {
-  position: absolute;   /* fixes it in the top-right */
-  top: 180px;
+      .search-sort-container {
+  position: absolute;  
+  top: 160px;
   right: 20px;
   display: flex;
   gap: 10px;
@@ -55,7 +57,7 @@
 }
 
 .search-sort-container input[type="text"]:focus {
-  border-color: #4caf50; /* green highlight on focus */
+  border-color: #4caf50;
 }
 
 .search-sort-container select {
@@ -72,15 +74,11 @@
   border-color: #4caf50;
 }
 
-    main {
-      padding: 20px;
-    }
-
-    .product-grid {
-       display: flex;
-       justify-content: center;
-       flex-wrap: wrap;
-       gap: 1.5rem;
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
        padding: 0 2rem 2rem;
         margin-bottom: 2rem;
       }
@@ -109,64 +107,54 @@
       max-width: 100%;
       border-radius: 8px;
     }
-
     .product-card h3 {
+      font-size: 17px;
       margin: 10px 0 5px;
-      font-size: 18px;
-      color: #2e7d32;
+      color: #8b5e34;
     }
-
     .product-card p {
       font-size: 14px;
-      color: #666;
+      color: #555;
+      margin: 5px 0;
     }
-
-    .price {
+    .product-card .price {
       font-weight: bold;
-      margin-top: 8px;
-      color: #4caf50;
+      color: #8b5e34;
+      margin-top: 7px;
+      margin-bottom: 10px;
     }
-
-    .hidden {
-      display: none;
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: auto;
     }
-   
- .product-card.btn {
-  background: #3d2513;
-  color: #FAF8F4;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 0.95rem;
-  font-weight: 500;
-  margin-top: auto;
-  margin-bottom: 1rem;
-  transition: background 0.3s, transform 0.2s;
-  box-shadow: 0 2px 8px rgba(255, 145, 164, 0.12);
-  position: static;
-  bottom: 5px;
-}
-
-.product-card .btn:hover {
-  background: #66462d;
-  transform: scale(1.07);
-}
-
-.btn {
-  background:#3d2513;
-  color: #fff;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 0.95rem;
-  font-weight: 500;
-  transition: background 0.3s, transform 0.2s;
-  box-shadow: 0 2px 8px rgba(92, 207, 230, 0.12);
-}
-
-.btn:hover {
-  background:#9e6234;
-  transform: scale(1.07);
-}
+    .product-card .btn,
+    .product-card .buy-btn {
+      padding: 0.5rem 1.1rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      margin-bottom: 0.5rem;
+    }
+    .product-card .btn {
+      background: #3d2513;
+      color: #FAF8F4;
+      box-shadow: 0 2px 8px rgba(255, 145, 164, 0.12);
+    }
+    .product-card .btn:hover {
+      background: #66462d;
+      transform: scale(1.07);
+    }
+    .product-card .buy-btn {
+      background: #3d2513;
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(43, 82, 90, 0.12);
+    }
+    .product-card .buy-btn:hover {
+      background: #66462d;
+      transform: scale(1.07);
+    }
