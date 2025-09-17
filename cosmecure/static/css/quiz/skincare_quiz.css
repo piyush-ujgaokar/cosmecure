@@ -1,6 +1,10 @@
 body {
   font-family: Arial, sans-serif;
-  background: #ECE1CE;
+  /* background: #ECE1CE; */
+  background-image: url(../../images/quiz/bacground_img_skincare.png);
+  background-repeat: no-repeats;
+  background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +13,7 @@ body {
 }
 
 .quiz-container {
-  background: #fff;
+  background: #ffffff10;
   padding: 40px 50px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
