@@ -15,3 +15,6 @@ def process_order(request):
     del request.session['product_price']
 
     return redirect('order_confirmation', order_id=order.order_id)
+
+    else:
+        return redirect('normal')
