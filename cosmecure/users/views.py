@@ -2,6 +2,7 @@ from django.shortcuts import render,redirect
 from .models import users
 from django.contrib import messages
 from django.contrib.auth.hashers import make_password,check_password
+from django.contrib.auth import authenticate, login, logout
 
 
 # Create your views here.
@@ -27,6 +28,7 @@ def signup_view(request):
         users.objects.create(#new instance of user,save it directly to db
             firstname=firstname,
             lastname=lastname,
+            username=email,
             email=email,
             phone=phone,
             password=hashed_password
@@ -38,16 +40,10 @@ def login_view(request):
     if request.method=='POST':
         email = request.POST.get('email')
         password = request.POST.get('password')
-        try:
-            user = users.objects.get(email=email)
-            if check_password(password,user.password):
-                request.session['user_id']=user.id
-                messages.success(request, "Login successful!")
-                return redirect('home')
-            else:
-                messages.error(request, "Invalid password.")
-        except users.DoesNotExist:
-            messages.error(request, "User does not exist.")
-        return redirect('login')
+        user = authenticate(request, username=email, password=password)
+        if user is not None:
+            login(request, user)
+            return redirect('home')
+        else:
+            messages.error(request, 'Invalid username or password')
     return render(request, 'login & signup/login.html')
-            

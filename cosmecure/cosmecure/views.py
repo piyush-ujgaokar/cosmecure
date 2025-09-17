@@ -1,9 +1,8 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 
 def home_view(request):
-    user_id = request.session.get('user_id')
     return render(request, 'home/home.html')
 
 def about_view(request):

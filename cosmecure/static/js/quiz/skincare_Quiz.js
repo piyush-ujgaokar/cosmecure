@@ -37,10 +37,12 @@ function showResult() {
     score[a] > score[b] ? a : b
 
   );
-
-  document.getElementById("result").textContent =
-
-    "✅ Your Skin Type: " + skinType.toUpperCase();
-     getProductBtn.style.display = 'block';
+  document.getElementById("result").textContent = "✅ Your Skin Type: " + skinType.toUpperCase();
+    getProductBtn.style.display = 'block';
+    
+  getProductBtn.addEventListener('click', () => {
+        // Redirect to a Django URL with the skin type
+        window.location.href = `/skincare/sub-page/${skinType}/`;
+    });
 }
 

@@ -1,21 +1,21 @@
-from django.shortcuts import render, redirect, get_object_or_404
-from models import Product
+from django.shortcuts import render
+from django.http import Http404
 
-
-# Create your views here.
-def product_list(request, skin_type):
-    products = Product.objects.filter(skin_type__iexact=skin_type)
-    context = {'products': products, 'skin_type': skin_type}
-    return render(request, 'skincare/normal.html', context)
-
-def buy_now(request, product_id):
-    
-    if request.method == 'POST':
-        product = get_object_or_404(Product, id=product_id)
-        
-        request.session['product_id'] = product.id
-        
-        
-        return redirect('buy_now_page')
-    
-    return redirect('product_list', skin_type='normal')
+def skin_type_products(request, skin_type):
+    # Define a map to link skin types to specific templates
+    template_map = {
+        'oily': 'skincare/sub-page/oily.html',
+        'dry': 'skincare/sub-page/dry.html',
+        'combination': 'skincare/sub-page/combination.html',
+        'normal': 'skincare/sub-page/normal.html',
+    }
+        if skin_type in template_map:
+        template_name = template_map[skin_type]
+        # You can pass context data to the template if needed
+        context = {
+            'skin_type_display': skin_type.capitalize()
+        }
+        return render(request, template_name, context)
+        else:
+        # If the skin type is invalid, return a 404 error
+        raise Http404("Skin type not found")
