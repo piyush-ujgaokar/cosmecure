@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed - CosmeCure</title>
+    <link rel="stylesheet" href="cosmecure/static/css/placed/placed.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <div class="icon-container">
+                <span class="checkmark">&#10003;</span>
+            </div>
+            <h1>Your Order has been Placed!</h1>
+            <p>Your order has been confirmed and is being prepared.</p>
+        </div>
+        
+        <div class="card-body">
+            <div class="order-summary">
+                <p><strong>Order ID:</strong> #CURE2025-09</p>
+                <p><strong>Estimated Arrival:</strong> Sept 18, 2025</p>
+            </div>
+            
+           <a href="track.html" class="track-button">
+    <span class="button-text">Track Your Shipment</span>
+    <span class="arrow">&rarr;</span>
+</a>
+        </div>
+    </div>
+</body>
+</html>{% endblock %}

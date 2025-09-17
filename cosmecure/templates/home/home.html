@@ -1,31 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CosmeCure</title>
-    <link rel="stylesheet" href="../../static/css/home/home.css">
-</head>
-<body>
-    
-    <div class="main">
-        <div class="nav-bar">
-            <div class="logo-sec">
-                <img src="../../static/images/home/logo_main.png" alt="">
-            </div>
-            <div class="part-1">
-                <h3>Home</h3>
-                <h3>Products</h3>
-                <h3><a href="../aboutus/about.html">About us</a></h3>
-                <h3><a href="../aboutus/about.html">Contact us</a></h3>
-            </div>
-            <div class="part-2">
-                <a class="btn Log-btn" href="../login & signup/login.html">Log In</a>
-                <a class="btn sign-btn" href="../login & signup/signup.html">Sign Up</a>
-            </div>
-        </div>
+
         <!-- <div class="line"></div> -->
 
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
         <div class="hero-sec">
             <div class="left-part">
                 <div class="text">
@@ -99,7 +77,7 @@
                         <p><span><img src="../../static/images/home/checkmark.png" alt=""></span>  Get Effective Result's</p>
                     </div>
 
-                    <button class="know-btn">Know More <span><img src="../../static/images/home/up-right-arrow.png" alt=""></span></button>
+                    <button class="know-btn"><a href="{% url 'skin_quiz' %}">Know More <span><img src="../../static/images/home/up-right-arrow.png" alt=""></span></a></button>
             </div>
         </div>
 
@@ -201,46 +179,9 @@
             </section>
         </div>
 
-        <div class="footer">
-            <div class="left-footer">
-                <div class="footer-logo">
-                   <img src="../../static/images/home/logo.png" alt="">
-                </div>
-                <div class="logo-tag">
-                    <a href="#"><img src="./icons/instagram.png" alt=""></a>
-                    <a href="#"><img src="./icons/linkedin.png" alt=""></a>
-                    <a href="#"><img src="./icons/twitter.png" alt=""></a>
-                </div>
-            </div>
-            <div class="right-footer">
-                <div class="about-contact">
-                    <div class="company">
-                        <h2>Company</h2>
-                        <a href="#">About-Us <br></a>
-                        <a href="#">Support <br></a>
-                        <a href="#">Privecy Policy <br></a>
-                        <a href="#">Terms & Condition <br></a>
-                    </div>
-                    <div class="Get-In-Touch">
-                        <h2>Get-In-Touch</h2>
-                        <a href="#">+91-643781289 <br></a>
-                        <a href="#">+91-6516316231631 <br></a>
-                        <a href="#">@CosmeCure.gmail.com <br></a>
-                    </div>
-                    <div class="Team">
-                        <h2>Team</h2>
-                            <a href="#">•Dimple Ghormode :- Leader <br></a>
-                            <a href="#">•Mahim :- Co-Leader <br></a>
-                            <a href="#">•Nomesh Shahare :- Founder <br></a>
-                            <a href="#">•Shrilesh Dhobale :- co-Founder<br></a>
-                            <a href="#">•Ayush .R. Choudhari :- Ceo Of Company <br></a>
-                            <a href="#">•Piyush Ujgaokar :- Employee <br></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        
 
 <script src=""></script>
 </body>
 </html>
+{% endblock %}

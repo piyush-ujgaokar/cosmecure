@@ -1,0 +1,184 @@
+:root {
+    --primary-color: #6a1b9a;
+    --primary-dark: #4a148c;
+    --secondary-color: #f1ede7;
+    --text-color: #333;
+    --border-color: #cec6fe;
+    --disabled-color: #b0b0b0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--secondary-color);
+    margin: 0;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.checkout-form {
+    flex: 2;
+    min-width: 350px;
+}
+
+.order-summary {
+    flex: 1;
+    min-width: 300px;
+    background-color: #ECE1CE;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+}
+
+.logo {
+    font-size: 2em;
+    color: var(--primary-color);
+    margin: 0 0 10px;
+}
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-section h3 {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.input-wrapper {
+    margin-bottom: 15px;
+}
+
+.input-wrapper label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.input-wrapper input,
+.input-wrapper select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-wrapper input:focus,
+.input-wrapper select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(110, 34, 158, 0.1);
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+
+.radio-group label,
+.payment-option {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.radio-group label:has(input:checked),
+.payment-option:has(input:checked) {
+    border-color: var(--primary-color);
+    background-color: #F9F4Fc;
+}
+
+.radio-group input[type="radio"],
+.payment-option input[type="radio"] {
+    margin-right: 15px;
+    accent-color: var(--primary-color);
+}
+
+.payment-option.disabled {
+    cursor: not-allowed;
+    background-color: #f9f9f9;
+    color: var(--disabled-color);
+}
+
+.payment-option .coming-soon {
+    margin-left: auto;
+    background-color: #e9ecef;
+    color: #6c757d;
+    font-size: 0.75em;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 12px;
+}
+
+.order-summary h3 { margin-top: 0; }
+.item { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid var(--secondary-color); }
+.item img { width: 60px; height: 60px; border-radius: 8px; object-fit: cover; }
+.item-details { flex-grow: 1; }
+.item-details p, .item-price { margin: 0; }
+.item-details span { font-size: 0.9em; color: #777; }
+
+.promo-code { display: flex; gap: 10px; margin: 20px 0;}
+.promo-code input { flex-grow: 1; padding: 10px; border: 1px solid var(--border-color); border-radius: 6px; }
+.promo-code button { padding: 10px 20px; border: none; background-color: #e0e0e0; color: #555; border-radius: 6px; cursor: pointer; font-weight: 500;}
+
+.price-breakdown { margin-top: 20px; }
+.price-row { display: flex; justify-content: space-between; margin-bottom: 10px; color: #555; }
+.price-row.total { font-size: 1.2em; font-weight: 600; color: var(--text-color); border-top: 1px solid var(--border-color); padding-top: 15px; margin-top: 15px; }
+.price-row.total strong { color: var(--primary-color); }
+
+
+.cta-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(90deg, var(--primary-dark), var(--primary-color), var(--primary-dark));
+    background-size: 200% 100%;
+    transition: background-position 0.5s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-position: 100% 0;
+    transform: translateY(-3px);
+}
+
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 480px) {
+    .input-grid {
+        grid-template-columns: 1fr;
+    }
+}
