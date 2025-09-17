@@ -10,3 +10,6 @@ def process_order(request):
             product_name=product_name,
             product_price=float(product_price) # Convert price to float for storage
         )
+    
+    del request.session['product_name']
+    del request.session['product_price']
