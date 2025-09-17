@@ -133,7 +133,7 @@
 }
 
 .buy-btn {
-  background: #5ccfe6;
+  background:#3d2513;
   color: #fff;
   border: none;
   padding: 0.6rem 1.2rem;
@@ -146,6 +146,6 @@
 }
 
 .buy-btn:hover {
-  background: #3ca7c6;
+  background:#9e6234;
   transform: scale(1.07);
 }
