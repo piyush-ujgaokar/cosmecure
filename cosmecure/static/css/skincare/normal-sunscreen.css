@@ -18,11 +18,48 @@ header {
     .controls > div {
       text-align: center;
     }
-    .filter-btn {
-      margin: 5px;
-      padding: 8px 18px;
-      border: none;
+     /* Navbar Styling */
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(17, 16, 16, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 20px;
+      position: sticky;  
+      top: 0;           
+      z-index: 1000;     
+    }
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 30px;
+    }
+    .navbar ul li {
+      display: inline;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: #8b5e34;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 8px 15px;
       border-radius: 20px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .navbar ul li a:hover {
+      background: #8b5e34;
+      color: #ffffff;
+    }
+
+
+.filter-btn {
+  margin: 5px;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 20px;
       background: #8b5e34;
       color: white;
       cursor: pointer;
@@ -33,52 +70,26 @@ header {
     .filter-btn:hover {
       background: #5a3820;
     }
-      .search-sort-container {
-  position: absolute;  
-  top: 160px;
-  right: 20px;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  background: #fff;
-  padding: 8px 12px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  z-index: 1000;
-}
-
-.search-sort-container input[type="text"] {
-  padding: 6px 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  outline: none;
-  font-size: 14px;
-  transition: border 0.3s ease;
-}
-
-.search-sort-container input[type="text"]:focus {
-  border-color: #4caf50;
-}
-
-.search-sort-container select {
-  padding: 6px 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  outline: none;
-  font-size: 14px;
-  cursor: pointer;
-  transition: border 0.3s ease;
-}
-
-.search-sort-container select:focus {
-  border-color: #4caf50;
-}
+ .search-sort-container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 20px;
+      margin-left: 60%;
+    }
+    .search-sort-container input, 
+    .search-sort-container select {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
 
 .product-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+       display: flex;
+      justify-content: center;
+         flex-wrap: wrap;
+         gap: 1.5rem;
        padding: 0 2rem 2rem;
         margin-bottom: 2rem;
       }
@@ -89,8 +100,7 @@ header {
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       width: 360px;
      height: 520px;
-     margin-top: 10px;
-     padding-bottom: 6px;
+     margin-top: 14px;
       text-align: center;
        overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;

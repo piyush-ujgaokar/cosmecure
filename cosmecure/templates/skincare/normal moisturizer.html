@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Normal Skin - Moisturizer</title>
+  <link rel="stylesheet" href="../../static/css/skincare/normal-moisturizer.css">
+</head>
+<body>
+  <header>
+    <h1>🌿 Normal Skin – Moisturizer</h1>
+    <p>Gentle moisturizers for balanced skin</p>
+  </header>
+
+  <!-- Controls -->
+  <section class="controls">
+    <div>
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="hydrating">Hydrating</button>
+      <button class="filter-btn" data-category="organic">Organic</button>
+      <button class="filter-btn" data-category="lightweight">Lightweight</button>
+      <button class="filter-btn" data-category="herbal">Herbal</button>
+    </div>
+
+    <div class="search-sort-container">
+    <input type="text" id="searchBar" placeholder="Search products by name...">
+    <select id="sortOptions">
+      <option value="default">Sort By</option>
+      <option value="az">Name: A → Z</option>
+      <option value="za">Name: Z → A</option>
+      <option value="low-high">Price: Low → High</option>
+      <option value="high-low">Price: High → Low</option>
+    </select>
+  </div>
+
+  <main>
+    <div class="product-grid">
+      <div class="product-card" data-category="hydrating">
+        <img src="../../../static/images/skincare/moisturizer/product-2.webp" alt="Hydrating Moisturizer">
+        <h3>Hydrating Moisturizer</h3>
+        <p>Keeps skin soft and fresh</p>
+        <p class="price">₹500</p>
+      </div>
+
+      <div class="product-card" data-category="organic">
+        <img src="https://via.placeholder.com/200x150?text=Organic+Moisturizer" alt="Organic Moisturizer">
+        <h3>Organic Aloe Moisturizer</h3>
+        <p>Made with aloe and natural oils</p>
+        <p class="price">₹650</p>
+      </div>
+
+      <div class="product-card" data-category="lightweight">
+        <img src="https://via.placeholder.com/200x150?text=Lightweight+Moisturizer" alt="Lightweight Moisturizer">
+        <h3>Lightweight Cream</h3>
+        <p>Non-sticky daily moisturizer</p>
+        <p class="price">₹400</p>
+      </div>
+
+      <div class="product-card" data-category="herbal">
+        <img src="https://via.placeholder.com/200x150?text=Herbal+Moisturizer" alt="Herbal Moisturizer">
+        <h3>Herbal Neem Moisturizer</h3>
+        <p>Neem & tulsi soothing blend</p>
+        <p class="price">₹550</p>
+      </div>
+    </div>
+  </main>
+    <script src="../../static/js/skincare/normal-moisturizer.js"></script>  
+</body>
+</html>
