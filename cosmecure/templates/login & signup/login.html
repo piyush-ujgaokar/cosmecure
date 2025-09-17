@@ -5,34 +5,29 @@
   <title>Login & Signup</title>
   <link rel="stylesheet" href="../../static/css/login & signup/login.css">
 </head>
-<body>
-  <div class="container">
-    <h2 id="formTitle">Login</h2>
-    <form id="authForm" method="POST">
-      {% csrf_token %}
-      <div id="signupFields" class="hidden">
-    <input type="text" placeholder="First Name" id="FirstName" class="input-field">
-    <input type="text" placeholder="Last Name" id="LastName" class="input-field">
-    <input type="tel" id="phone" placeholder="Phone Number" pattern="[0-9]{10}" maxlength="10" title="Enter a 10-digit phone number" class="input-field">
+
+  <body>
+    <div class="container">
+      <div class="logo-sec">
+        <img src="../../static/images/login image/logo.png" alt="Login Logo">
       </div>
-      <input type="text" placeholder="Email" id="email" required>
-      <input type="password" placeholder="Set Password" id="password" required>
-      <input type="password" placeholder="Confirm Password" id="confirmPassword" class="hidden">
-      
-
-      <button type="submit" id="submitBtn">Login</button>
-    </form>
-
-    <p>
-      <span id="toggleText">Don't have an account?</span>
-<<<<<<< HEAD
-  <a href="./signup.html" id="toggleLink">Sign up</a>
-=======
-  <a href="{% url 'signup' %}" id="toggleLink">Sign up</a>
->>>>>>> 8ad035fa4c7428204a93c89b84f1309de7f89938
-    </p>
-  </div>
-
-  <script src="/cosmecure/static/js/login.js"></script>
-</body>
+      <h2 id="formTitle">Login</h2>
+      <form id="authForm">
+        <div id="signupFields" class="hidden">
+          <input type="text" placeholder="First Name" id="FirstName" class="input-field">
+          <input type="text" placeholder="Last Name" id="LastName" class="input-field">
+          <input type="tel" id="phone" placeholder="Phone Number" pattern="[0-9]{10}" maxlength="10" title="Enter a 10-digit phone number" class="input-field">
+        </div>
+        <input type="text" placeholder="Email" id="email" required>
+        <input type="password" placeholder="Enter Password" id="password" required>
+        <input type="password" placeholder="Confirm Password" id="confirmPassword" class="hidden">
+        <button type="submit" id="submitBtn">Login</button>
+      </form>
+      <p>
+        <span id="toggleText">Don't have an account?</span>
+        <a href="#" id="toggleLink">Sign up</a>
+      </p>
+    </div>
+    <script src="../../static/js/login.js"></script>
+  </body>
 </html>

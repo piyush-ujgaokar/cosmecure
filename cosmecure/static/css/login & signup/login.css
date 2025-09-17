@@ -1,7 +1,12 @@
 body {
   margin: 0;
+  width: 100vw;
+  height: 100vh;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #ECE1CE;
+  background-image: url("../../cosmecure/static/images/login image/background.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  object-fit: cover;
   color: #1F1F1F;
   display: flex;
   justify-content: center;
@@ -10,36 +15,61 @@ body {
 }
 
 .container {
-  background-color: #F1EDE7;
+  background-color: #f1ede7a2;
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(61, 37, 19, 0.2);
+  box-shadow: 0 4px 12px #faf8f4;
+  
   width: 350px;
   text-align: center;
+  
+}
+
+.logo-sec {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 18px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-sec img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 0;
+  background: none;
 }
 
 .form-title {
   margin-bottom: 20px;
 }
+.form-title, #formTitle {
+  color: #3d2513;
+  font-size: 2 rem;
+  font-weight: 200;
+  font-weight: bold;
+  text-shadow: 1px 2px #cbcbcb;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
 
 input[type="text"],
 input[type="password"],
 input[type="phone number"],
-input[type="tel"],
-input[type="email"] {
+input[type="tel"] {
   width: 100%;
   padding: 10px;
-  margin: 8px 0;
-  background-color: #FAF8F4;
+  margin: 10px 0;
+  background-color: #faf8f4c1;
   border: 1px solid #ECE1CE;
   border-radius: 6px;
   font-size: 14px;
 }
 
-
 button {
   background-color: #3d2513;
-  color: #FAF8F4;
+  color: #faf8f4;
   border: none;
   padding: 10px 20px;
   border-radius: 6px;
@@ -50,7 +80,7 @@ button {
 }
 
 button:hover {
-  background-color: #1F1F1F;
+  background-color: #20140a;
 }
 
 .checkbox {
@@ -67,6 +97,7 @@ button:hover {
 p {
   margin-top: 15px;
   font-size: 14px;
+  color: #FAF8F4;
 }
 
 a {
@@ -82,3 +113,4 @@ a:hover {
 .hidden {
   display: none;
 }
+
