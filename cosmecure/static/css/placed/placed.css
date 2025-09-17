@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f2f5;
+    background-color: #f9f8fa;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,12 +8,14 @@ body {
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
+    border: 1px solid #6f2dbd;
 }
 
 .card {
+    border: 2px solid #93623d;
     max-width: 400px;
     width: 100%;
-    background: #fff;
+    background: #f9f9fb;
     border-radius: 16px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -70,7 +72,7 @@ body {
 
 .order-summary {
     background-color: #f8f9fa;
-    border: 1px solid #e9ecef;
+    border: 1px solid #3a3079;
     border-radius: 12px;
     padding: 15px;
     margin-bottom: 30px;
@@ -85,11 +87,11 @@ body {
 
 
 .track-button {
-    display: block;
-    width: 100%;
+
+    width: 200%;
     background: #6a1b9a;
     color: white;
-    padding: 15px;
+    padding: 15px 35px;
     border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
