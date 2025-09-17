@@ -37,7 +37,9 @@ function showResult() {
     score[a] > score[b] ? a : b
 
   );
-
-  window.location.href = `/products/${skinType}`;
+  getProductBtn.addEventListener('click', () => {
+        // Redirect to a Django URL with the skin type
+        window.location.href = `/skincare/sub-page/${skinType}/`;
+    });
 }
 
