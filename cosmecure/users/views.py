@@ -7,8 +7,8 @@ from django.contrib.auth.hashers import make_password,check_password
 # Create your views here.
 def signup_view(request):
     if request.method == 'POST':
-        firstname = request.POST.get('Firstname')
-        lastname = request.POST.get('Lastname')
+        firstname = request.POST.get('FirstName')
+        lastname = request.POST.get('LastName')
         email= request.POST.get('email')
         phone = request.POST.get('phone')
         password = request.POST.get('password')
@@ -33,7 +33,7 @@ def signup_view(request):
         )
         messages.success(request, "Signup successful! Please log in.")
         return redirect('login')
-    renturn render(request, 'login & signup/signup.html')
+    return render(request, 'login & signup/signup.html')
 def login_view(request):
     if request.method=='POST':
         email = request.POST.get('email')
