@@ -3,3 +3,7 @@ from models import Product
 
 
 # Create your views here.
+def product_list(request, skin_type):
+    products = Product.objects.filter(skin_type__iexact=skin_type)
+    context = {'products': products, 'skin_type': skin_type}
+    return render(request, 'skincare/normal.html', context)
