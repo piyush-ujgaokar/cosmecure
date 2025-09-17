@@ -18,3 +18,5 @@ def process_order(request):
 
     else:
         return redirect('normal')
+def order_confirmation(request, order_id):
+    order = get_object_or_404(Order, order_id=order_id)
