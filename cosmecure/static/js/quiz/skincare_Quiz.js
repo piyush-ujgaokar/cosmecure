@@ -38,9 +38,6 @@ function showResult() {
 
   );
 
-  document.getElementById("result").textContent =
-
-    "✅ Your Skin Type: " + skinType.toUpperCase();
-     getProductBtn.style.display = 'block';
+  window.location.href = `/skincare/sub-page/${skinType}/`;
 }
 
