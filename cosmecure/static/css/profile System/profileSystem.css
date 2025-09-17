@@ -82,6 +82,7 @@ html,body{
 }
 .part-2{
     width:12%;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,17 +91,38 @@ html,body{
    
 }
 
-.part-2 .add-to-cart{
-    /* height: 50%;
-    width: 50%; */
+
+.part-2 .add-to-cart {
     display: flex;
-    justify-content:flex-end;
-    /* background-color: green; */
+    align-items: center;
+    justify-content: center;
+    width: 45px;   /* square container */
+    height: 45px;
+    border-radius: 50%;
+    background-color: transparent; /* keep it clean */
 }
-.add-to-cart img{
-    width: 40%;
-    height: 20%;
+
+.add-to-cart a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
+
+.add-to-cart img {
+    width: 65%;   /* keep it proportional */
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.add-to-cart img:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* subtle zoom */
+}
+
+
 .add-to-cart img:hover{
     cursor: pointer;
 }
@@ -581,7 +603,7 @@ span img{
       font-size: 14px;
       color: #666;
     }
-    
+
     .price {
       font-weight: bold;
       margin-top: 8px;
