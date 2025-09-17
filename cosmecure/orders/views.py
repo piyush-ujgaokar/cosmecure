@@ -17,7 +17,7 @@ def process_order(request):
     return redirect('order_confirmation', order_id=order.order_id)
 
     else:
-        return redirect('normal')
+        return redirect('normal_skincare')
         
 def order_confirmation(request, order_id):
     order = get_object_or_404(Order, order_id=order_id)
