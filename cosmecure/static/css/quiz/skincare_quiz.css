@@ -50,3 +50,50 @@ h1 {
  color: #ECE1CE;
  
 }
+
+.option input {
+  display: none;
+}
+
+.option img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid transparent;
+}
+
+.option input:checked + img {
+  border-color: #3d2513;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #3d2513;
+}
+
+
+#getProductBtn {
+    background-color:#3d2513; /* A nice green color */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: block; 
+    font-size: 16px;
+    margin: 20px auto; 
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.5s ease; 
+}
+
+#getProductBtn:hover{
+  background-color: #cab590;
+  color: #3d2513;
+}
+
+
+
