@@ -27,3 +27,4 @@ def order_confirmation(request, order_id):
         # We can add logic here to calculate estimated arrival date
         'estimated_arrival': "Sept 18, 2025" 
     }
+    return render(request, 'placed/placed.html', context)
