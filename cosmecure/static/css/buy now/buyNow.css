@@ -1,6 +1,6 @@
 :root {
     --primary-color: #6a1b9a;
-    --primary-dark: #4a148c;
+    --primary-dark: #93623d;
     --secondary-color: #f1ede7;
     --text-color: #333;
     --border-color: #cec6fe;
@@ -43,7 +43,7 @@ body {
 
 .logo {
     font-size: 2em;
-    color: var(--primary-color);
+    color: #93623d;
     margin: 0 0 10px;
 }
 
@@ -109,7 +109,7 @@ body {
 .radio-group label:has(input:checked),
 .payment-option:has(input:checked) {
     border-color: var(--primary-color);
-    background-color: #F9F4Fc;
+    background-color: #fdfcfb;
 }
 
 .radio-group input[type="radio"],
