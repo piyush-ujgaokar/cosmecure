@@ -9,12 +9,12 @@
 <body>
   <div class="container">
     <h2 class="form-title">Sign Up</h2>
-    <form id="signupForm" method="POST">
+    <form id="signupForm" method="post" action="/signup/">
       {% csrf_token %}
       <input type="text" placeholder="First Name" id="FirstName" name="FirstName" class="input-field" required>
       <input type="text" placeholder="Last Name" id="LastName" name="LastName" class="input-field" required>
       <input type="email" placeholder="Email" id="email" name="email" class="input-field" required>
-      <input type="tel" id="phone" placeholder="Phone Number" name="phone" pattern="[0-9]{10}" maxlength="10" title="Enter a 10-digit phone number" class="input-field" required>
+      <input type="tel" id="phone" name="phone" placeholder="Phone Number" pattern="[0-9]{10}" maxlength="10" title="Enter a 10-digit phone number" class="input-field" required>
       <input type="password" placeholder="Set Password" id="password" name="password" class="input-field" required>
       <input type="password" placeholder="Confirm Password" id="confirmPassword" name="confirmPassword" class="input-field" required>
       <button type="submit" id="signupBtn">Sign Up</button>

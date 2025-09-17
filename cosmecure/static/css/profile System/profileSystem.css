@@ -83,20 +83,34 @@ html,body{
 .part-2{
     width: 5%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
     gap: 20px;
    
 }
 .part-2 .profile{
     width: 60px;
     height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     /* background-color: red; */
 }
  .profile img{
-    width: 85%;
-    height: 85%;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     object-fit: cover;
+ }
+ .profile a{
+    text-decoration: none;
+    color: #1F1F1F;
+ }
+ .profile p{
+    margin-left: 8px;
+    font-size: 15px;
  }
 
  .profile img:hover{
