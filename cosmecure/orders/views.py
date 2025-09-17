@@ -18,5 +18,12 @@ def process_order(request):
 
     else:
         return redirect('normal')
+        
 def order_confirmation(request, order_id):
     order = get_object_or_404(Order, order_id=order_id)
+    context={
+        'order': order,
+        'order_id': order.order_id,
+        # We can add logic here to calculate estimated arrival date
+        'estimated_arrival': "Sept 18, 2025" 
+    }
