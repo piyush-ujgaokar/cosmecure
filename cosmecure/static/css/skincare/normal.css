@@ -13,8 +13,6 @@ body {
 .slider-container {
       position: relative;
       width: 100%;
-      margin-left: 60px;
-      margin-right: 60px;
       height: 60vh; 
       overflow: hidden;
     }
@@ -199,7 +197,6 @@ h2 {
   background: #66462d;
   transform: scale(1.07);
 }
-
 
 /* Add to Cart and Buy Now button styles */
 .card .btn,
