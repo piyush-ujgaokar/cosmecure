@@ -48,6 +48,7 @@ h1 {
 .option:hover {
  background-color: #3d2513;
  color: #ECE1CE;
+ transform: scale(1.1);
  
 }
 
@@ -56,8 +57,8 @@ h1 {
 }
 
 .option img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   margin-right: 10px;
   border-radius: 50%;
   object-fit: cover;
