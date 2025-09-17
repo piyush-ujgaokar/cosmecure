@@ -5,3 +5,8 @@ def process_order(request):
     if 'product_name' in request.session and 'product_price' in request.session:
         product_name = request.session.get('product_name')
         product_price = request.session.get('product_price')
+
+    order = Order.objects.create(
+            product_name=product_name,
+            product_price=float(product_price) # Convert price to float for storage
+        )
