@@ -31,8 +31,8 @@
        
         <div class="info-field">
           <label>Email:</label>
-          <span id="emailText">piyush@example.com</span>
-          <input type="email" id="emailInput" class="edit-input" value="piyush@example.com">
+          <span id="emailText">{{email}}</span>
+          <input type="email" id="emailInput" class="edit-input" value="{{email}}">
           <div class="btn-group">
             <button class="edit-btn" onclick="enableEdit('email')">✏️</button>
             <button class="set-btn" onclick="setField('email')">✔️</button>
@@ -51,21 +51,12 @@
         </div>
 
       
-        <div class="info-field">
-          <label>Address:</label>
-          <span id="addressText">Delhi, India</span>
-          <textarea id="addressInput" class="edit-input textarea-input">Delhi, India</textarea>
-          <div class="btn-group">
-            <button class="edit-btn" onclick="enableEdit('address')">✏️</button>
-            <button class="set-btn" onclick="setField('address')">✔️</button>
-          </div>
-        </div>
 
     
         <div class="info-field">
           <label>Mobile:</label>
-          <span id="mobileText">+91 9876543210</span>
-          <input type="text" id="mobileInput" class="edit-input" value="+91 9876543210">
+          <span id="mobileText">{{phone}}</span>
+          <input type="text" id="mobileInput" class="edit-input" value="{{phone}}">
           <div class="btn-group">
             <button class="edit-btn" onclick="enableEdit('mobile')">✏️</button>
             <button class="set-btn" onclick="setField('mobile')">✔️</button>
