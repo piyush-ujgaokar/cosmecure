@@ -26,5 +26,6 @@ urlpatterns = [
     path('about/', views.about_view, name='about'),
     path('skin_quiz/', views.skin_quiz_view, name='skin_quiz'),
     path('skincare/sub-page/', include('products.urls')),
+    path('profilesystem/', views.profilesystem_view, name='profilesystem'),
     
 ]
