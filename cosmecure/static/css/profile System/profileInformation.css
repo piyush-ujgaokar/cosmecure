@@ -29,6 +29,10 @@ body {
 
 .profile-image {
   position: relative;
+  display: flex;
+  align-items: center;
+  
+  flex-direction: column;
 }
 .profile-image img {
   width: 150px;
@@ -41,6 +45,7 @@ body {
   display: inline-block;
   margin-top: 10px;
   padding: 6px 12px;
+  width: 50%;
   background: #3D2513;
   color: #FAF8F4;
   border-radius: 8px;
