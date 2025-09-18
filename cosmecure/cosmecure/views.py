@@ -11,3 +11,6 @@ def about_view(request):
 def skin_quiz_view(request):
     return render(request, 'quiz/skincare_Quiz.html')
 
+def profilesystem_view(request):
+    return render(request, 'profile system/profileSystem.html')
+
