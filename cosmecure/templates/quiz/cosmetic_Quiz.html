@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Style Quiz</title>
+    <link rel="stylesheet" href="quiz_cos.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>Find Your Perfect Makeup Look</h1>
+        
+        <div class="question active" data-question="q1">
+            <h3>What kind of foundation finish do you prefer?</h3>
+            <label class="option-label">
+                <input type="radio" name="q1" value="dewy">
+                <img class="option-image" src="https://via.placeholder.com/100x100?text=Dewy" alt="Dewy and Glowy Makeup">
+                <span class="option-text">Dewy & Glowy</span>
+            </label>
+            <label class="option-label">
+                <input type="radio" name="q1" value="matte">
+                <img class="option-image" src="https://via.placeholder.com/100x100?text=Matte" alt="Matte and Smooth Makeup">
+                <span class="option-text">Matte & Smooth</span>
+            </label>
+            <label class="option-label">
+                <input type="radio" name="q1" value="natural">
+                <img class="option-image" src="https://via.placeholder.com/100x100?text=Natural" alt="Natural and Everyday Makeup">
+                <span class="option-text">Natural & Everyday</span>
+            </label>
+        </div>
+
+        <div class="question" data-question="q2">
+            <h3>Which eye makeup style is your favorite?</h3>
+            <label class="option-label">
+                <input type="radio" name="q2" value="smoky">
+                <img class="option-image" src="https://via.placeholder.com/100x100?text=Smoky+Eyes" alt="Smoky Eye Makeup">
+                <span class="option-text">Bold & Smoky Eyes</span>
+            </label>
+            <label class="option-label">
+                <input type="radio" name="q2" value="glittery">
+                <img class="option-image" src="https://via.placeholder.com/100x100?text=Glitter" alt="Glittery Eye Makeup">
+                <span class="option-text">Glittery & Shimmery</span>
+            </label>
+            <label class="option-label">
+                <input type="radio" name="q2" value="natural-eye">
+                <img class="option-image" src="https://via.placeholder.com/100x100?text=Natural+Eyes" alt="Natural Eye Makeup">
+                <span class="option-text">Natural & Defined</span>
+            </label>
+        </div>
+
+        <div class="question" data-question="q3">
+            <h3>Which lip product do you wear most often?</h3>
+            <label class="option-label">
+                <input type="radio" name="q3" value="lipstick">
+                <img class="option-image" src="https://via.placeholder.com/100x100?text=Lipstick" alt="Lipstick Product">
+                <span class="option-text">Classic Lipstick</span>
+            </label>
+            <label class="option-label">
+                <input type="radio" name="q3" value="gloss">
+                <img class="option-image" src="https://via.placeholder.com/100x100?text=Gloss" alt="Lip Gloss Product">
+                <span class="option-text">Shiny Lip Gloss</span>
+            </label>
+            <label class="option-label">
+                <input type="radio" name="q3" value="balm">
+                <img class="option-image" src="https://via.placeholder.com/100x100?text=Balm" alt="Lip Balm Product">
+                <span class="option-text">Tinted Lip Balm</span>
+            </label>
+        </div>
+        
+        <div id="result-container" class="hidden">
+            <h2 id="result-message"></h2>
+            
+            <button id="result-button">Get Your Products</button>
+        </div>
+    </div>
+
+    <script src="quiz_cos.js"></script>
+
+</body>
+</html>
