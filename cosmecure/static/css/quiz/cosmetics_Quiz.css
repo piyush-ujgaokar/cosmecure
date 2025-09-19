@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ECE1CE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.question {
+    display: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.question.active {
+    display: block;
+}
+
+.option-label {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option-label:hover {
+    background-color:#3d2513;
+    color: #ffffff;
+}
+
+/* This is the key style for making the images circular */
+.option-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fills the circular space */
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.option-text {
+    font-weight: bold;
+}
+
+/* Hide the actual radio button */
+.option-label input[type="radio"] {
+    display: none;
+}
+
+/* Change style when the option is selected */
+.option-label input[type="radio"]:checked + .option-image {
+    border-color: #007bff;
+}
+
+.option-label input[type="radio"]:checked + .option-image + .option-text {
+    color: #007bff;
+}
+
+.hidden {
+    display: none;
+}
+
+#result-container {
+    text-align: center;
+}
+
+#result-message {
+    color: #007bff;
+}
+
+#result-button {
+    background-color:#3d2513;
+    color: white;
+    font-size: 19px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#result-button:hover{
+  background-color: #cab590;
+  color: #3d2513;
+}
