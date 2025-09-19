@@ -27,6 +27,7 @@ def signup_view(request):
             return redirect('signup')
     
         users.objects.create_user(#new instance of user,save it directly to db
+            username=email,
             firstname=firstname,
             lastname=lastname,
             username=email,
