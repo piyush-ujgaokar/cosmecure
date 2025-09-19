@@ -3,6 +3,7 @@ from .models import users
 from django.contrib import messages
 from django.contrib.auth.hashers import make_password,check_password
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
@@ -47,3 +48,8 @@ def login_view(request):
         else:
             messages.error(request, 'Invalid username or password')
     return render(request, 'login & signup/login.html')
+
+@login_required # Protect this page so only logged-in users can see it
+def profilesystem_view(request):
+    return render(request, 'profile system/profileSystem.html')
+

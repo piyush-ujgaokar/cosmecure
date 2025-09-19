@@ -1,4 +1,4 @@
-/*const formTitle = document.getElementById('formTitle');
+const formTitle = document.getElementById('formTitle');
 const submitBtn = document.getElementById('submitBtn');
 const toggleText = document.getElementById('toggleText');
 const toggleLink = document.getElementById('toggleLink');
@@ -25,4 +25,4 @@ let isLogin = true;
   }
 
   alert(isLogin ? "Logged in successfully!" : "Signed up successfully!");
-  authForm.reset();*/
+  authForm.reset();
