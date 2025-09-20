@@ -1,8 +1,10 @@
  header {
-      text-align: center;
-      padding: 20px;
-      background: #93623d;
-      color: white;
+       text-align: center;
+  background: #93623d;
+  color: white;
+  padding: 2rem 1rem;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
   .navbar {
      background-color: #ffffff;
@@ -70,13 +72,13 @@
 
    .search-sort-container {
   position: absolute;   /* fixes it in the top-right */
-  top: 220px;
+  top: 250px;
   right: 20px;
   display: flex;
   gap: 10px;
   align-items: center;
   background: #fff;
-  padding: 8px 12px;
+  padding: 6px 12px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   z-index: 1000;
@@ -106,7 +108,7 @@
 }
 
 .search-sort-container select:focus {
-  border-color: #4caf50;
+  border-color:#3d2513
 }
 
     main {
@@ -126,7 +128,7 @@
       background: #fff;
      border-radius: 15px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      width: 360px;
+      width: 370px;
      height: 520px;
      margin-top: 10px;
      padding-bottom: 6px;
