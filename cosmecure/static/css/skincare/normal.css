@@ -6,7 +6,11 @@
 }
 
 body {
+<<<<<<< HEAD
   background: #faf8f4;
+=======
+  background: white;
+>>>>>>> b3a66b3448ff34f8a227f818ce9347a145a5ae45
   color: #333;
 }
 

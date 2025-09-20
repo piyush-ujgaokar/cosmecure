@@ -20,15 +20,15 @@
   </header>
 
   <section class="controls">
-    <div>
-      <button class="filter-btn active" data-category="all">All</button>
-      <button class="filter-btn" data-category="spf30">Hydrating</button>
-      <button class="filter-btn" data-category="spf50">SPF 50</button>
-      <button class="filter-btn" data-category="matte">Matte Finish</button>
-      <button class="filter-btn" data-category="herbal">Herbal</button>
-    </div>
+  <div class="filter-group">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="hydrating">Hydrating</button>
+    <button class="filter-btn" data-category="spf50">SPF 50</button>
+    <button class="filter-btn" data-category="matte">Matte Finish</button>
+    <button class="filter-btn" data-category="herbal">Herbal</button>
+  </div>
 
-    <div class="search-sort-container">
+  <div class="search-sort-container">
     <input type="text" id="searchBar" placeholder="Search products by name...">
     <select id="sortOptions">
       <option value="default">Sort By</option>
@@ -38,9 +38,10 @@
       <option value="high-low">Price: High → Low</option>
     </select>
   </div>
+</section>
   <main>
     <div class="product-grid">
-      <div class="product-card" data-category="spf30">
+      <div class="product-card" data-category="hydrating">
         <img src="../../static/images/skincare/sunscreen/product-1.webp" alt="Hydrating Sunscreen">
         <h3>Hydrating Sunscreen</h3>
         <p>Light protection for daily use</p>
@@ -117,7 +118,7 @@
         </div>
       </div>
 
-      <div class="product-card" data-category="spf30">
+      <div class="product-card" data-category="hydrating">
         <img src="../../static/images/skincare/sunscreen/product-12.avif" alt="Daily SPF 30">
         <h3>Daily SPF 50 Lotion</h3>
         <p>Everyday use, suitable for normal skin</p>
@@ -140,6 +141,6 @@
       </div>
     </div>
   </main>
-  <script src="../../../"></script>
+     <script src="../../static/js/skincare/normal-sunscreen.js"></script>
 </body>
 </html>
