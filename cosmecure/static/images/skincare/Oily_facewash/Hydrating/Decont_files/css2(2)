@@ -1,0 +1,272 @@
+<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ModeMagic - Store Conversions</title><link rel="icon" type="image/png" href="https://res.cloudinary.com/dsvdhggfk/image/upload/v1585037800/shopify/favicon.png"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet"><style>html {
+    font-size: 7px;
+    height: 100%;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-size: 1.2rem;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    box-sizing: border-box;
+    color: white !important;
+    background-color: white;
+}
+
+.container {
+    background: #070525;
+    padding: 6rem 16rem 6rem 16rem;
+    max-height: 75%;
+}
+
+.bold {
+    font-weight: 400 !important;
+}
+
+.exbold {
+    font-weight: 700 !important;
+}
+
+button {
+    font-family: 'Lato', sans-serif !important;
+    border-color: transparent;
+    color: white;
+    font-size: 2.8rem;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 6.4rem;
+}
+
+button:active {
+    transform: scale(0.92);
+}
+
+.header {
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    max-width: 90rem;
+}
+
+.logo {
+    width: 30rem;
+}
+
+.contact {
+    border: solid 2px #f45765;
+    color: #f45765;
+    background-color: transparent;
+    font-size: 2rem;
+    height: 5rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.8rem !important;
+}
+
+.title {
+    font-size: 7.2rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    margin-bottom: 3rem;
+}
+
+.install {
+    background-color: #f45765;
+}
+
+.or {
+    font-size: 4.8rem;
+    margin-bottom: 7rem;
+}
+
+.already {
+    font-size: 4.8rem;
+    margin-bottom: 1rem;
+}
+
+.dem {
+    position: relative;
+    width: 600px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.gifImage {
+    width: 70rem;
+    height: 70rem;
+    position: absolute;
+}
+
+.compt1 {
+    padding-left: 2rem;
+    border-left: 1px solid #848fc3;
+}
+
+.contactDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4rem 16rem 4rem 16rem;
+}
+
+.contactText {
+    color: #070525;
+    font-size: 2.4rem;
+    margin-right: 2rem;
+}
+
+.mobHead {
+    color: black;
+    background: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem;
+    color: white;
+    background: #5f70c2;
+    display: none;
+}
+
+.browserHead {
+    color: black;
+    background: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem;
+    color: white;
+    background: #5f70c2;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        overflow: scroll;
+    }
+
+    .browserHead {
+        display: none;
+    }
+
+    .mobHead {
+        display: block;
+    }
+
+    .container {
+        background: white;
+        padding: 0;
+        max-height: fit-content;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        background: #070525;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+        color: black !important;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .already {
+        font-size: 3rem;
+    }
+
+    .left {
+        margin-top: 5rem;
+    }
+
+    .dem {
+        background: linear-gradient(to bottom, #070525 0%, #070525 70%, #ffffff 70%, #ffffff 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .gifImage {
+        max-width: 80%;
+        width: auto;
+        height: auto;
+        position: unset;
+    }
+
+    .compt1 {
+        padding: 0 2rem;
+        border: none;
+        text-align: center;
+    }
+
+    .contactDiv {
+        border-top: 1px solid #070525;
+        margin: 5rem 2rem;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+
+    .contactText {
+        font-size: 2rem;
+    }
+}</style></head><body><div class="browserHead">Please open on Chrome or Firefox for the best experience.</div><div class="browserHead">Couldn't install app, but it's a temporary glitch. Do login again!</div><div class="container"><div class="header"><img class="logo" src="https://cdn.glitch.com/26046cd4-85e4-403f-9f73-94671d944273%2FArtboard%201expframe2.png?v=1586854797198"></div><div class="content"><div class="left"><div class="compt1"><div class="title exbold">Get ModeMagic On Your Shopify Store Now!</div><div class="description">Increase your store conversions &amp; sales with ModeMagic</div><a href="https://apps.shopify.com/modemagic" aria-label="e2e-install-mode-magic-btn" target="blank"><button class="install bold">Install ModeMagic</button></a></div><br><br><div class="compt1"><div class="already exbold">Already have ModeMagic?</div><span>Launch it from the “Apps” section on your Shopify Store Dashboard</span></div></div><div class="dem"><img class="gifImage" src="https://lh3.googleusercontent.com/T2R4X9X-C4gcXkJiqFqQ97EeJK8jdUsW8EGoriqUUwNdhQI49KLyvsBjpiBHoSsPUFA4JgswZaLt3cWR7CPXrrA=w420"></div></div></div><div class="contactDiv"><div class="contactText">Still need help with something?</div><a href="https://getmodemagic.com" target="blank"><button class="contact bold">Contact Us</button></a></div><script>window.intercomSettings = {
+  app_id: "hqhtmpzi"
+};</script><script>(function () {
+  var w = window;
+  var ic = w.Intercom;
+  if (typeof ic === "function") {
+    ic('reattach_activator');
+    ic('update', w.intercomSettings);
+  } else {
+    var d = document;
+    var i = function () {
+      i.c(arguments);
+    };
+    i.q = [];
+    i.c = function (args) {
+      i.q.push(args);
+    };
+    w.Intercom = i;
+    var l = function () {
+      var s = d.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://widget.intercom.io/widget/hqhtmpzi';
+      var x = d.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    };
+    if (w.attachEvent) {
+      w.attachEvent('onload', l);
+    } else {
+      w.addEventListener('load', l, false);
+    }
+  }
+})();
+window.addEventListener('message', function(event) {
+  console.debug('Received message', event)
+  const origin = event.origin;
+    if (origin.includes("https://getmason.io")) {
+    window.localStorage.setItem('amplitudeDeviceId', event.data.id);
+  }
+});</script></body></html>
