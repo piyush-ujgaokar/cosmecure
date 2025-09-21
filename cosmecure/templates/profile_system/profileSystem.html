@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CosmeCure</title>
-    <link rel="stylesheet" href="../../static/css/profile System/profileSystem.css">
+    <link rel="stylesheet" href="{% static 'css/profile system/profileSystem.css' %}">
+    
 </head>
 <body>
     
@@ -18,8 +19,8 @@
             <div class="part-1">
                 <h3>Home</h3>
                 <h3>Products</h3>
-                <h3><a href="../aboutus/about.html">About us</a></h3>
-                <h3><a href="../aboutus/about.html">Contact us</a></h3>
+                <h3><a href="{% url 'about' %}">About us</a></h3>
+                <h3><a href="{% url 'about' %}">Contact us</a></h3>
             </div>
          <div class="part-2">
             <div class="add-to-cart">
