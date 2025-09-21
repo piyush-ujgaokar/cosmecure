@@ -3,6 +3,7 @@ from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.models import User
 from .models import Profile
+from django.contrib.auth.decorators import login_required
 
 def signup_view(request):
     context = {} # This will hold any error messages
@@ -59,6 +60,9 @@ def login_view(request):
     else:
         form = AuthenticationForm()
     return render(request, 'login & signup/login.html', {'form': form})
+
+def profileinfo_view(request):
+
 
 
 def logout_view(request):
