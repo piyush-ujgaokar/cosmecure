@@ -120,7 +120,7 @@ body {
 
 .part-1 h3{
     font-size: 1.3rem;
-    background-color: green;
+    /* background-color: green; */
     height: 60%;
     cursor: pointer;
     font-weight: 400;
@@ -131,7 +131,7 @@ body {
     color: #3d2513;
 }
 .part-1 h3:hover{
-    transform: scale(1.08);
+    transform: scale(5);
 }
 .part-1 h3:hover{
      border-bottom: 2px solid #3E2614;
