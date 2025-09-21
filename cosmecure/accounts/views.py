@@ -60,8 +60,10 @@ def login_view(request):
     else:
         form = AuthenticationForm()
     return render(request, 'login & signup/login.html', {'form': form})
-
+    
+@login_required
 def profileinfo_view(request):
+    return render(request, 'profile_system/profileInformation.html', context)
 
 
 
