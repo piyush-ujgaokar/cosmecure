@@ -6,15 +6,7 @@
 }
 
 body {
-<<<<<<< HEAD
-  background:  #f9ede5;
-=======
-<<<<<<< HEAD
-  background: #faf8f4;
-=======
-  background: white;
->>>>>>> b3a66b3448ff34f8a227f818ce9347a145a5ae45
->>>>>>> 35d728e5f70517a242e1b616ff14e21b3ecaedd9
+  background: #f8e9dd;
   color: #333;
 }
 
@@ -42,7 +34,7 @@ body {
     .slide img {
       width: 100%;
       height: 100%;
-      box-sizing: border-box;
+      object-fit: cover;
     }
 
 

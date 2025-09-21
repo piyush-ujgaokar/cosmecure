@@ -3,6 +3,7 @@
   background: #93623d;
   color: white;
   padding: 2rem 1rem;
+  padding-bottom: 10px;
   margin-bottom: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
@@ -11,10 +12,11 @@
       box-shadow: 0 2px 6px rgba(17, 16, 16, 0.1);
       display: flex;
       justify-content: center;
+      font-size: large;
       align-items: center;
-      border: 1px solid #666;
+      border: 2px solid #666;
       border-radius: 5px;
-      margin-bottom: 4px;
+      margin-bottom: 5px;
       padding: 14px 20px;
       position: sticky;  
       top: 0;           
@@ -72,7 +74,7 @@
 
    .search-sort-container {
   position: absolute;   /* fixes it in the top-right */
-  top: 250px;
+  top: 280px;
   right: 20px;
   display: flex;
   gap: 10px;
@@ -116,9 +118,9 @@
     }
 
     .product-grid {
-       display: flex;
+       display: grid;
        justify-content: center;
-       flex-wrap: wrap;
+       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
        gap: 1.5rem;
        padding: 0 2rem 2rem;
         margin-bottom: 2rem;
@@ -126,18 +128,19 @@
 
     .product-card {
       background: #fff;
-     border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      width: 370px;
-     height: 520px;
-     margin-top: 10px;
-     padding-bottom: 6px;
-      text-align: center;
-       overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-       display: flex;
-       flex-direction: column;
-       justify-content: flex-start;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 360px;
+  height: 490px;
+  padding-top: 3px;
+  padding-bottom: 28px;
+  margin-bottom: 5px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
     }
 
     .product-card:hover {
@@ -166,10 +169,6 @@
       color: #4caf50;
     }
 
-    .hidden {
-      display: none;
-    }
-   
  .product-card.btn {
   background: #3d2513;
   color: #FAF8F4;

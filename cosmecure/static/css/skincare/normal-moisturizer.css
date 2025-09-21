@@ -3,7 +3,8 @@ header {
            background: #93623d;
            color: white;
            padding: 2rem 1rem;
-           margin-bottom: 10px;
+           padding-bottom: 14px;
+           margin-bottom: 5px;
            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
     .controls {
