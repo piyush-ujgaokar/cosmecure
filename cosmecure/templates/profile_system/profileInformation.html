@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profile Information</title>
-  <link rel="stylesheet" href="../../static/css/profile System/profileInformation.css">
+  <link rel="stylesheet" href="{% static 'css/profile system/profileInformation.css' %}">
 </head>
 <body>
   <div class="profile-container">
@@ -21,7 +21,7 @@
       
         <div class="info-field">
           <label>Name:</label>
-          <span id="nameText">Piyush</span>
+          <span id="nameText">{{name}}</span>
           <input type="text" id="nameInput" class="edit-input" value="Piyush">
           <div class="btn-group">
             <button class="edit-btn" onclick="enableEdit('name')">✏️</button>

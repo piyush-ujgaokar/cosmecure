@@ -60,9 +60,22 @@ def login_view(request):
     else:
         form = AuthenticationForm()
     return render(request, 'login & signup/login.html', {'form': form})
-    
+
 @login_required
 def profileinfo_view(request):
+    user = request.user
+    try:
+        profile = user.profile
+    except Profile.DoesNotExist:
+        profile = Profile.objects.create(user=user)
+
+    context = {
+        'user': user,
+        'profile': profile,
+        'email': user.email,
+        'phone': profile.phone_number,
+        'name': user.get_full_name()
+    }
     return render(request, 'profile_system/profileInformation.html', context)
 
 
