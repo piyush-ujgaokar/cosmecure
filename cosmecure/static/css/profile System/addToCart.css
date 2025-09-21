@@ -120,7 +120,7 @@ body {
 
 .part-1 h3{
     font-size: 1.3rem;
-    /* background-color: green; */
+    background-color: green;
     height: 60%;
     cursor: pointer;
     font-weight: 400;
