@@ -5,3 +5,4 @@ from django.contrib.auth.decorators import login_required
 @login_required
 def skincare_quiz(request):
     return render(request, 'quiz/skincare_Quiz.html')
+
