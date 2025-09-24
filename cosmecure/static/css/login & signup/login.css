@@ -3,7 +3,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: 'Segoe UI', sans-serif;
-  background-image: url("../../cosmecure/static/images/login image/background.png");
+  background-image: url("../../../static/images/");
   background-repeat: no-repeat;
   background-size:cover;
   object-fit: cover;
