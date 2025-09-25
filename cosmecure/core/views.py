@@ -12,3 +12,8 @@ def about_view(request):
 def dashboard_view(request):
     return render(request, 'profile_system/profileSystem.html')
 
+@login_required
+def knowmore_view(request):
+    return render(request, 'knowmore/knowmore.html')
+
+
