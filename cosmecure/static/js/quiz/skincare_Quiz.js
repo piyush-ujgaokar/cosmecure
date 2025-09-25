@@ -42,7 +42,7 @@ function showResult() {
     
   getProductBtn.addEventListener('click', () => {
         // Redirect to a Django URL with the skin type
-        window.location.href = `/${skinType}/`;
+        window.location.href = `/skincare/sub-page/${skinType}/`;
     });
 }
 
