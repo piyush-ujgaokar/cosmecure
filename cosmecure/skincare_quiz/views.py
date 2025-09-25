@@ -19,3 +19,5 @@ def skin_type_products(request, skin_type):
     context = {
         'skin_type_display': skin_type.capitalize()
     }
+    return render(request, template_name, context)  
+    raise Http404("Skin type not found")
