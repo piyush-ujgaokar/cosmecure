@@ -14,3 +14,8 @@ def skin_type_products(request, skin_type):
         'combination': 'skincare/sub-page/combination.html',
         'normal': 'skincare/sub-page/normal.html',
         }
+    if skin_type in template_map:
+        template_name = template_map[skin_type]
+    context = {
+        'skin_type_display': skin_type.capitalize()
+    }
