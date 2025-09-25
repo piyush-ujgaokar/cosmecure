@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'core',
     'accounts',
     'skincare_quiz',
+    'cosmetic_quiz',
 ]
 
 MIDDLEWARE = [
