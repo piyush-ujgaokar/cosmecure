@@ -7,7 +7,7 @@ urlpatterns = [
     path('dashboard/', views.dashboard_view, name='dashboard'),
     path('',include('accounts.urls')),
     path('skincare/',include('skincare_quiz.urls')),
-
+    path('knowmore/', views.knowmore_view, name='knowmore'),
 
     
 ]
