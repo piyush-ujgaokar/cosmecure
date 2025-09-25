@@ -1,0 +1,185 @@
+header {
+   text-align: center;
+  background: #93623d;
+  color: white;
+  padding: 2rem 1rem;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    .controls {
+      margin: 24px 0 10px 0;
+    }
+    .controls > div {
+      text-align: center;
+    }
+     /* Navbar Styling */
+    .navbar {
+       background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(17, 16, 16, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #666;
+      border-radius: 5px;
+      margin-top: 20px;
+      margin-bottom: 4px;
+      padding: 14px 20px;
+      position: sticky;  
+      top: 0;           
+      z-index: 1000;     
+    }
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 30px;
+    }
+    .navbar ul li {
+      display: inline;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: #8b5e34;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 10px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .navbar ul li a:hover {
+      background: #8b5e34;
+      color: #ffffff;
+    }
+
+
+.filter-btn {
+  margin: 5px;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 8px;
+      background: #8b5e34;
+      color: white;
+      cursor: pointer;
+      font-size: 15px;
+      transition: background 0.2s;
+    }
+    .filter-btn.active,
+    .filter-btn:hover {
+      background: #5a3820;
+    }
+ .search-sort-container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 10px;
+      margin-top: 2px;
+      margin-left: 60%;
+    }
+    .search-sort-container input, 
+    .search-sort-container select {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+.product-grid {
+       display: flex;
+      justify-content: center;
+         flex-wrap: wrap;
+         gap: 1.5rem;
+       padding: 0 2rem 2rem;
+        margin-bottom: 2rem;
+      }
+
+    .product-card {
+      background: #fff;
+     border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 360px;
+     height: 480px;
+     margin-top: 14px;
+      text-align: center;
+       overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      padding-top: 16px;
+      height: 300px;
+      object-fit: cover;
+    }
+    .product-card h3 {
+      font-size: 17px;
+      margin: 10px 0 5px;
+      color: #151515;
+    }
+    .product-card p {
+      font-size: 14px;
+      color: #1a1919;
+      margin: 5px 0;
+    }
+    .product-card .price {
+      font-weight: bold;
+      color: #8b5e34;
+      margin-top: 7px;
+      margin-bottom: 10px;
+    }
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: auto;
+    }
+    .product-card .btn,
+    .product-card .buy-btn {
+      padding: 0.5rem 1.1rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      margin-bottom: 0.5rem;
+    }
+    .product-card .btn {
+      background: #3d2513;
+      color: #FAF8F4;
+      box-shadow: 0 2px 8px rgba(255, 145, 164, 0.12);
+    }
+    .product-card .btn:hover {
+      background: #66462d;
+      transform: scale(1.07);
+    }
+    .product-card .buy-btn {
+      background: #3d2513;
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(43, 82, 90, 0.12);
+    }
+    .product-card .buy-btn:hover {
+      background: #66462d;
+      transform: scale(1.07);
+    }
+    .display-none {
+      display: none;
+    }

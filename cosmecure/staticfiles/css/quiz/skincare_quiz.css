@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  /* background: #ECE1CE; */
+  background-image: url(../../images/quiz/bacground_img_skincare.png);
+  background-repeat: no-repeats;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.quiz-container {
+  background: #ffffff10;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+
+}
+
+.question {
+  display: none;
+  font-size: 20px;
+}
+
+.question.active {
+  display: block;
+}
+
+.option {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #1F1F1F;
+  padding: 8px;
+  margin: 9px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.option:hover {
+ background-color: #3d2513;
+ color: #ECE1CE;
+ transform: scale(1.1);
+ 
+}
+
+.option input {
+  display: none;
+}
+
+.option img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid transparent;
+}
+
+.option input:checked + img {
+  border-color: #3d2513;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #3d2513;
+}
+
+
+#getProductBtn {
+    background-color:#3d2513; /* A nice green color */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: block; 
+    font-size: 16px;
+    margin: 20px auto; 
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.5s ease; 
+}
+
+#getProductBtn:hover{
+  background-color: #cab590;
+  color: #3d2513;
+}
+
+
+
