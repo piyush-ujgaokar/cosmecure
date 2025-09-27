@@ -109,7 +109,7 @@ header {
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       width: 360px;
      height: 480px;
-     margin-top: 14px;
+     margin-top: 16px;
       text-align: center;
        overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -125,9 +125,9 @@ header {
     .product-card img {
       max-width: 100%;
       border-radius: 8px;
-      padding-top: 16px;
+      padding-top: 14px;
       height: 300px;
-      object-fit: cover;
+      object-fit: contain;
     }
     .product-card h3 {
       font-size: 17px;
