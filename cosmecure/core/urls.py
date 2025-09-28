@@ -9,6 +9,7 @@ urlpatterns = [
     path('skincare/',include('skincare_quiz.urls')),
     path('knowmore/', views.knowmore_view, name='knowmore'),
     path('cosmetic/',include('cosmetic_quiz.urls')),
+    path('buy-now/', views.buy_now_view, name='buy_now'),
 
     
 ]
