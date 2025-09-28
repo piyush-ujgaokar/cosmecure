@@ -116,21 +116,14 @@
         <h3>Order Summary</h3>
         <div class="order-items">
             <div class="item">
-                <img src="https://via.placeholder.com/60" alt="Product Image">
+                <img src="{{ product.image_url }}" alt="{{ product.name }}">
                 <div class="item-details">
-                    <p>HydraBoost Gel Cleanser</p>
-                    <span>For your <strong>Oily Skin</strong></span>
+                    <p>{{ product.name }}</p>
+                    <span>{{ product.description }}</span>
                 </div>
-                <p class="item-price">₹899.00</p>
+                <p class="item-price">₹{{ product.price }}</p>
             </div>
-            <div class="item">
-                <img src="https://via.placeholder.com/60" alt="Product Image">
-                <div class="item-details">
-                    <p>MatteFinish Sunscreen SPF 50</p>
-                    <span>For your <strong>Oily Skin</strong></span>
-                </div>
-                <p class="item-price">₹1,250.00</p>
-            </div>
+            
         </div>
         <div class="promo-code">
             <input type="text" placeholder="Discount code">
