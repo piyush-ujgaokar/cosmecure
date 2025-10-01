@@ -1,0 +1,1 @@
+web: gunicorn cosmecure.wsgi --log-file -

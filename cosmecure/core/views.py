@@ -16,4 +16,16 @@ def dashboard_view(request):
 def knowmore_view(request):
     return render(request, 'knowmore/knowmore.html')
 
-
+def buy_now_view(request):
+    # You will need to fetch the product from the database here
+    # For now, we'll use a placeholder
+    product = {
+        'name': 'HydraBoost Gel Cleanser',
+        'description': 'For your Oily Skin',
+        'price': 899.00,
+        'image_url': 'https://via.placeholder.com/60'
+    }
+    context = {
+        'product': product
+    }
+    return render(request, 'buy now/buy.html', context)
