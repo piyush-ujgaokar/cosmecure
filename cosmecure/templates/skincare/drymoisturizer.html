@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dry Skin - Moisturizer</title>
+  <link rel="stylesheet" href="../../static/css/skincare/normal-moisturizer.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <ul>
+       <li><a href="./dryfacewash.html">Facewash</a></li>
+      <li><a href="./drysunscreen.html">Sunscreen</a></li>
+      <li><a href="./drymoisturizer.html">Moisturizer</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>🌿 Dry Skin – Moisturizer</h1>
+    <p>Nourishing moisturizers for dry skin</p>
+  </header>
+
+  <!-- Controls -->
+  <section class="controls">
+    <div>
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="hydrating">Hydrating</button>
+      <button class="filter-btn" data-category="organic">Organic</button>
+      <button class="filter-btn" data-category="lightweight">Lightweight</button>
+      <button class="filter-btn" data-category="herbal">Herbal</button>
+    </div>
+
+    <div class="search-sort-container">
+    <input type="text" id="searchBar" placeholder="Search products by name...">
+    <select id="sortOptions">
+      <option value="default">Sort By</option>
+      <option value="az">Name: A → Z</option>
+      <option value="za">Name: Z → A</option>
+      <option value="low-high">Price: Low → High</option>
+      <option value="high-low">Price: High → Low</option>
+    </select>
+  </div>
+
+  <main>
+  <div class="product-grid">
+    <div class="product-card" data-category="hydrating">
+      <img src="../../static/images/skincare/moisturizer/dry-product7.jpg" alt="Cetaphil DermaControl Oil Control Moisturizer">
+      <h3>Cetaphil DermaControl Oil Control Moisturizer</h3>
+      <p>SPF 30, oil-free hydration for dry skin</p>
+      <p class="price">₹550</p>
+      <div class="button-group">
+        <button class="btn">Add to Cart</button>
+        <button class="btn buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="organic">
+      <img src="../../static/images/skincare/moisturizer/dry-product8.jpg" alt="The Body Shop Vitamin E Moisture Cream">
+      <h3>The Body Shop Vitamin E Moisture Cream</h3>
+      <p>Rich cream with vitamin E for dry skin repair</p>
+      <p class="price">₹700</p>
+      <div class="button-group">
+        <button class="btn">Add to Cart</button>
+        <button class="btn buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="lightweight">
+      <img src="../../static/images/skincare/moisturizer/dry-product3.webp" alt="Neutrogena Hydro Boost Water Gel">
+      <h3>Neutrogena Hydro Boost Water Gel</h3>
+      <p>Lightweight gel for instant hydration</p>
+      <p class="price">₹450</p>
+      <div class="button-group">
+        <button class="btn">Add to Cart</button>
+        <button class="btn buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="herbal">
+      <img src="../../static/images/skincare/moisturizer/dry-product4.avif" alt="Himalaya Nourishing Skin Cream">
+      <h3>Himalaya Nourishing Skin Cream</h3>
+      <p>Herbal cream with aloe and pomegranate</p>
+      <p class="price">₹600</p>
+      <div class="button-group">
+        <button class="btn">Add to Cart</button>
+        <button class="btn buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Additional Cards -->
+    <div class="product-card" data-category="hydrating">
+      <img src="../../static/images/skincare/moisturizer/dry-product5.avif" alt="CeraVe Moisturizing Cream">
+      <h3>CeraVe Moisturizing Cream</h3>
+      <p>Ceramides and hyaluronic acid for dry skin</p>
+      <p class="price">₹530</p>
+      <div class="button-group">
+        <button class="btn">Add to Cart</button>
+        <button class="btn buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="organic">
+      <img src="../../static/images/skincare/moisturizer/dry-product6.avif" alt="Forest Essentials Ayurvedic Cream">
+      <h3>Forest Essentials Ayurvedic Cream</h3>
+      <p>Organic ingredients for deep nourishment</p>
+      <p class="price">₹750</p>
+      <div class="button-group">
+        <button class="btn">Add to Cart</button>
+        <button class="btn buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="lightweight">
+      <img src="../../static/images/skincare/moisturizer/dry-product7.jpg" alt="La Roche-Posay Toleriane Cream">
+      <h3>La Roche-Posay Toleriane Cream</h3>
+      <p>Gentle, lightweight for sensitive dry skin</p>
+      <p class="price">₹480</p>
+      <div class="button-group">
+        <button class="btn">Add to Cart</button>
+        <button class="btn buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="herbal">
+      <img src="../../static/images/skincare/moisturizer/dry-product8.webp" alt="Mamaearth Ubtan Body Lotion">
+      <h3>Mamaearth Ubtan Body Lotion</h3>
+      <p>Herbal ubtan for glowing, moisturized skin</p>
+      <p class="price">₹560</p>
+      <div class="button-group">
+        <button class="btn">Add to Cart</button>
+        <button class="btn buy-btn">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card" data-category="herbal">
+      <img src="../../static/images/skincare/moisturizer/dry-product9.webp" alt="Bioderma Atoderm Cream">
+      <h3>Bioderma Atoderm Cream</h3>
+      <p>Intensive moisturizer for very dry skin</p>
+      <p class="price">₹320</p>
+      <div class="button-group">
+        <button class="btn">Add to Cart</button>
+        <button class="btn buy-btn">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card" data-category="hydrating">
+      <img src="../../static/images/skincare/moisturizer/dry-product10.webp" alt="Eucerin Eczema Relief Cream">
+      <h3>Eucerin Eczema Relief Cream</h3>
+      <p>Colloidal oatmeal for dry, itchy skin</p>
+      <p class="price">₹460</p>
+      <div class="button-group">
+        <button class="btn">Add to Cart</button>
+        <button class="btn buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="organic">
+      <img src="../../static/images/skincare/moisturizer/dry-product11.jpg" alt="The Ordinary Natural Moisturizing Factors">
+      <h3>The Ordinary Natural Moisturizing Factors</h3>
+      <p>Oil-free hydration with natural ingredients</p>
+      <p class="price">₹520</p>
+      <div class="button-group">
+        <button class="btn">Add to Cart</button>
+        <button class="btn buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="lightweight">
+      <img src="../../static/images/skincare/moisturizer/dry-product12.avif" alt="Clinique Dramatically Different Moisturizing Gel">
+      <h3>Clinique Dramatically Different Moisturizing Gel</h3>
+      <p>Oil-free gel for dry combination skin</p>
+      <p class="price">₹400</p>
+      <div class="button-group">
+        <button class="btn">Add to Cart</button>
+        <button class="btn buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="herbal">
+      <img src="../../static/images/skincare/moisturizer/dry-product13.jpg" alt="Kama Ayurveda Eladi Hydrating Cream">
+      <h3>Kama Ayurveda Eladi Hydrating Cream</h3>
+      <p>Ayurvedic cream for dry skin balance</p>
+      <p class="price">₹440</p>
+      <div class="button-group">
+        <button class="btn">Add to Cart</button>
+        <button class="btn buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="hydrating">
+      <img src="../../static/images/skincare/moisturizer/dry-product14.jpg" alt="Vichy Aqualia Thermal Cream">
+      <h3>Vichy Aqualia Thermal Cream</h3>
+      <p>Hyaluronic acid for intense hydration</p>
+      <p class="price">₹420</p>
+      <div class="button-group">
+        <button class="btn">Add to Cart</button>
+        <button class="btn buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="organic">
+      <img src="../../static/images/skincare/moisturizer/dry-product15.jpg" alt="Plum Green Tea Mattifying Moisturizer">
+      <h3>Plum Green Tea Mattifying Moisturizer</h3>
+      <p>Green tea and aloe for balanced moisture</p>
+      <p class="price">₹570</p>
+      <div class="button-group">
+        <button class="btn">Add to Cart</button>
+        <button class="btn buy-btn">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</main>
+    <script src="../../static/js/skincare/normal-moisturizer.js"></script>  
+</body>
+</html>

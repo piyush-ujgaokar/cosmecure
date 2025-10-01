@@ -22,7 +22,7 @@ header {
     .controls > div {
       text-align: center;
     }
-     /* Navbar Styling */
+
     .navbar {
        background-color: #ffffff;
       box-shadow: 0 2px 6px rgba(17, 16, 16, 0.1);
@@ -125,9 +125,7 @@ header {
     .product-card img {
       max-width: 100%;
       border-radius: 8px;
-      padding-top: 14px;
-      height: 300px;
-      object-fit: contain;
+      height: 320px;
     }
     .product-card h3 {
       font-size: 17px;
