@@ -95,6 +95,15 @@ CosmeCure is a comprehensive Django-based web application designed to provide pe
 
 This project is licensed under the MIT License.
 
+## Contributors
+
+- Dimple Ghormode
+- Mahim Kubade
+- Piyush Ujgaokar
+- Shrilesh Dhobale
+- Ayush Chaudhari
+- Nomesh Shahare
+
 ## Support
 
 For questions or support, please contact the development team.
