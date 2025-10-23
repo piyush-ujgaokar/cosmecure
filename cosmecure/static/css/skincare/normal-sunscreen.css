@@ -1,15 +1,19 @@
 header {
-      background: #8b5e34;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
+   text-align: center;
+  background: #93623d;
+  color: white;
+  padding: 2rem 1rem;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     header h1 {
       margin: 0;
       font-size: 28px;
+      font-weight: bold;
     }
     header p {
-      margin-top: 5px;
+      margin-top: 10px;
       font-size: 16px;
     }
     .controls {
@@ -18,15 +22,16 @@ header {
     .controls > div {
       text-align: center;
     }
-     /* Navbar Styling */
+
     .navbar {
        background-color: #ffffff;
       box-shadow: 0 2px 6px rgba(17, 16, 16, 0.1);
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid #666;
+      border: 2px solid #666;
       border-radius: 5px;
+      margin-top: 20px;
       margin-bottom: 4px;
       padding: 14px 20px;
       position: sticky;  
@@ -49,7 +54,7 @@ header {
       font-size: 16px;
       font-weight: bold;
       padding: 8px 15px;
-      border-radius: 20px;
+      border-radius: 10px;
       transition: background 0.3s ease, color 0.3s ease;
     }
     .navbar ul li a:hover {
@@ -62,7 +67,7 @@ header {
   margin: 5px;
   padding: 8px 18px;
   border: none;
-  border-radius: 20px;
+  border-radius: 8px;
       background: #8b5e34;
       color: white;
       cursor: pointer;
@@ -103,8 +108,8 @@ header {
      border-radius: 15px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       width: 360px;
-     height: 520px;
-     margin-top: 14px;
+     height: 480px;
+     margin-top: 16px;
       text-align: center;
        overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -120,15 +125,16 @@ header {
     .product-card img {
       max-width: 100%;
       border-radius: 8px;
+      height: 320px;
     }
     .product-card h3 {
       font-size: 17px;
       margin: 10px 0 5px;
-      color: #8b5e34;
+      color: #151515;
     }
     .product-card p {
       font-size: 14px;
-      color: #555;
+      color: #1a1919;
       margin: 5px 0;
     }
     .product-card .price {
@@ -147,7 +153,7 @@ header {
     .product-card .buy-btn {
       padding: 0.5rem 1.1rem;
       border: none;
-      border-radius: 30px;
+      border-radius: 6px;
       font-size: 0.95rem;
       font-weight: 500;
       cursor: pointer;
@@ -171,4 +177,7 @@ header {
     .product-card .buy-btn:hover {
       background: #66462d;
       transform: scale(1.07);
+    }
+    .display-none {
+      display: none;
     }

@@ -1,9 +1,12 @@
 header {
-         text-align: center; 
-         padding: 20px; 
-         background:  #8b5e34;
-         color: white;
-         border-radius: 8px;
+          text-align: center;
+           background: #93623d;
+           color: white;
+           padding: 2rem 1rem;
+           padding-top: 10px;
+           padding-bottom: 10px;
+           margin-bottom: 5px;
+           box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
     .controls {
          padding: 20px; 
@@ -17,8 +20,9 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid #666;
+      border: 2px solid #666;
       border-radius: 5px;
+      margin-top: 15px;
       margin-bottom: 4px;
       padding: 14px 20px;
       position: sticky;  
@@ -90,12 +94,12 @@ header {
   margin-bottom: 2rem;
 }
 
-    .product-card { 
-        background: #fff;
-         border-radius: 15px;
-         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-          width: 320px;
-  min-height: 440px;
+.product-card { 
+   background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 320px;
+    min-height: 440px;
   margin-bottom: 18px;
   padding: 18px 18px 16px 18px;
   text-align: center;
@@ -111,16 +115,14 @@ header {
     }
     .product-card img { 
          max-width: 100%; 
-         height: 260px;
-  object-fit: contain;
-  border-radius: 8px; 
-  margin-bottom: 12px;
+         height: 280px;
+         border-radius: 8px; 
     }
     .product-card h3 { 
          margin: 10px 0 5px; 
          font-size: 19px; 
          color: #3d2513;
-  font-weight: 600;
+        font-weight: 600;
     }
     .product-card p { 
          font-size: 15px; 
@@ -147,22 +149,23 @@ header {
      }
      .btn {
        padding: 10px 15px;
+       margin-top: 6px;
        border: none;
        border-radius: 6px;
        background: #3d2513;
        color: white;
-       font-weight: bold;
+       font-weight:  0.95rem;
        cursor: pointer;
        transition: background 0.3s ease, transform 0.2s ease;
      }    
      .btn:hover {
-       background:  #4e3a1f;
+       background: #66462d;
        transform: scale(1.05);
      }    
      .buy-btn { 
-       background:  #3d2513;
+       background: #3d2513;
      }
      .buy-btn:hover {
-       background: #4e3a1f;
+       background: #66462d;
        transform: scale(1.05);
      }

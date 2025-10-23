@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skincare Products - Dry Skin</title>
+  <link rel="stylesheet" href="../../../static/css/skincare/normal.css">
+</head>
+<body>
+  <div class="slider-container">
+    <div class="slider" id="slider">
+      <div class="slide"><img src="../../../static/images/skincare/moisturizer/moisturizer-slidder1.webp" alt="Slide 1"></div>
+      <div class="slide"><img src="../../../static/images/skincare/facewash/facewash-slidder1.webp" alt="Slide 2"></div>
+      <div class="slide"><img src="../../../static/images/skincare/sunscreen/sunscreen-slidder1.webp" alt="Slide 3"></div>
+      <div class="slide"><img src="../../../static/images/skincare/facewash/facewash-slidder2.webp" alt="Slide 4"></div>
+    </div>
+    <button class="btn btn-left" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="btn btn-right" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+
+  <header>
+    <h1>🌿 Dry Skin Care </h1>
+    <p>Recommended products for dry skin type</p>
+  </header>
+  
+  <div class="category-links" style="text-align:center; margin: 2rem 0 1rem;">
+    <a href="../../../templates/skincare/dryfacewash.html" class="btn" style="margin:0 0.5rem;">Facewash</a>
+    <a href="../../../templates/skincare/drysunscreen.html" class="btn" style="margin:0 0.5rem;">Sunscreen</a>
+    <a href="../../../templates/skincare/drymoisturizer.html" class="btn" style="margin:0 0.5rem;">Moisturizer</a>
+  </div>
+
+  <div class="search-sort-container">
+    <input type="text" id="searchBar" placeholder="Search products by name...">
+    <select id="sortOptions">
+      <option value="default">Sort By</option>
+      <option value="az">Name: A → Z</option>
+      <option value="za">Name: Z → A</option>
+      <option value="low-high">Price: Low → High</option>
+      <option value="high-low">Price: High → Low</option>
+    </select>
+  </div>
+
+  <section class="products">
+    <div class="card-container" id="productContainer">
+   
+      <div class="card">
+        <img src="../../../static/images/skincare/facewash/dry-product2.webp" alt="Creamy Facewash">
+        <h3>Cetaphil Gentle Facewash</h3>
+        <p>Soap-free, creamy cleanser for dry & sensitive skin.</p>
+        <span>₹325</span>
+        <div style="display:flex; justify-content:center; gap:10px; margin-top:auto; margin-bottom:1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../../static/images/skincare/moisturizer/dry-product1.avif" alt="Hydrating Cream">
+        <h3>CeraVe Moisturizing Cream</h3>
+        <p>Rich hydration with ceramides for very dry skin.</p>
+        <span>₹899</span>
+        <div style="display:flex; justify-content:center; gap:10px; margin-top:auto; margin-bottom:1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../../static/images/skincare/sunscreen/dry-product1.jpg" alt="Hydrating Sunscreen">
+        <h3>Neutrogena Hydro Boost Sunscreen</h3>
+        <p>SPF 50 with hydration boost, perfect for dry skin.</p>
+        <span>₹575</span>
+        <div style="display:flex; justify-content:center; gap:10px; margin-top:auto; margin-bottom:1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../../static/images/skincare/moisturizer/dry-product2.webp" alt="Shea Butter Cream">
+        <h3>Nivea Shea Butter Cream</h3>
+        <p>Deep nourishment for long-lasting dry skin relief.</p>
+        <span>₹425</span>
+        <div style="display:flex; justify-content:center; gap:10px; margin-top:auto; margin-bottom:1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../../static/images/skincare/facewash/dry-product1.jpg" alt="Strawberry Facewash">
+        <h3>Lakme Strawberry Cream Facewash</h3>
+        <p>Cleanses while retaining skin’s natural moisture.</p>
+        <span>₹299</span>
+        <div style="display:flex; justify-content:center; gap:10px; margin-top:auto; margin-bottom:1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../../static/images/skincare/sunscreen/dry-product2.webp" alt="Moisturizing Sunscreen">
+        <h3>Aqualogica Glow Sunscreen</h3>
+        <p>SPF 50 + hydration, designed for dry skin comfort.</p>
+        <span>₹549</span>
+        <div style="display:flex; justify-content:center; gap:10px; margin-top:auto; margin-bottom:1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../../static/images/skincare/moisturizer/dry-product3.png" alt="Cocoa Butter Lotion">
+        <h3>Palmer's Cocoa Butter Lotion</h3>
+        <p>Intense hydration for rough & dry skin types.</p>
+        <span>₹575</span>
+        <div style="display:flex; justify-content:center; gap:10px; margin-top:auto; margin-bottom:1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../../static/images/skincare/facewash/dry-product3.avif" alt="Hydrating Foam Cleanser">
+        <h3>Ziaja  Foam Cleanser</h3>
+        <p>Foamy yet moisturizing, prevents skin dryness.</p>
+        <span>₹349</span>
+        <div style="display:flex; justify-content:center; gap:10px; margin-top:auto; margin-bottom:1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../../static/images/skincare/moisturizer/dry-product4.jpg" alt="Night Cream">
+        <h3>L'Oréal Hydra Night Cream</h3>
+        <p>Deep overnight repair for dry skin types.</p>
+        <span>₹799</span>
+        <div style="display:flex; justify-content:center; gap:10px; margin-top:auto; margin-bottom:1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../../static/images/skincare/sunscreen/dry-product3.webp" alt="SPF Cream">
+        <h3>Lotus Herbal SPF Cream</h3>
+        <p>UV protection + moisturization for dry skin.</p>
+        <span>₹649</span>
+        <div style="display:flex; justify-content:center; gap:10px; margin-top:auto; margin-bottom:1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../../../static/images/skincare/facewash/dry-product5.jpg" alt="Honey & Almond Facewash">
+        <h3> Joy Honey & Almond Facewash</h3>
+        <p>Enriched with honey and almond oil for gentle cleansing and deep nourishment.</p>
+        <span>₹340</span>
+        <div style="display:flex; justify-content:center; gap:10px; margin-top:auto; margin-bottom:1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../../static/images/skincare/moisturizer/dry-product5.jpg" alt="Avocado Moisturizer">
+        <h3>Plix Avocado Moisturizer</h3>
+        <p>Rich in avocado oil for intense hydration and skin barrier repair.</p>
+        <span>₹620</span>
+        <div style="display:flex; justify-content:center; gap:10px; margin-top:auto; margin-bottom:1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../../static/images/skincare/sunscreen/dry-product4.webp" alt="Shea Butter Sunscreen">
+        <h3>Shea Butter Sunscreen SPF 30</h3>
+        <p>SPF 30 with shea butter for sun protection and deep moisturization.</p>
+        <span>₹570</span>
+        <div style="display:flex; justify-content:center; gap:10px; margin-top:auto; margin-bottom:1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../../static/images/skincare/moisturizer/dry-product6.jpg" alt="Olive Oil Night Cream">
+        <h3> MediCosOlive Oil Night Cream</h3>
+        <p>Deeply nourishing night cream with olive oil for dry skin recovery.</p>
+        <span>₹690</span>
+        <div style="display:flex; justify-content:center; gap:10px; margin-top:auto; margin-bottom:1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../../static/images/skincare/facewash/dry-product8.jpg" alt="Cream Cleanser">
+        <h3> Nivea Milk Protein Cream Cleanser</h3>
+        <p>Ultra-mild cleanser with milk proteins for soft, hydrated skin.</p>
+        <span>₹399</span>
+        <div style="display:flex; justify-content:center; gap:10px; margin-top:auto; margin-bottom:1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../../static/images/skincare/sunscreen/dry-product4.avif" alt="Hydra Sunscreen SPF 60">
+        <h3>Uniqaya Hydra Sunscreen SPF 60</h3>
+        <p>High SPF and hydrating formula for extra dry, sun-exposed skin.</p>
+        <span>₹720</span>
+        <div style="display:flex; justify-content:center; gap:10px; margin-top:auto; margin-bottom:1rem;">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../../../static/js/skincare/normal.js"></script>
+</body>
+</html>
