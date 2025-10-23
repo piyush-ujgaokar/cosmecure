@@ -33,6 +33,7 @@
                 <input type="radio" name="q1" value="combination">
                 <img src="../../static/images/quiz/combinational.png" alt="Combination"> Oily in some areas, dry in others
             </label>
+            <button class="next-btn" disabled>Next</button>
         </div>
 
         <div class="question" data-question="q2">
@@ -53,6 +54,7 @@
                 <input type="radio" name="q2" value="dry">
                 <img src="../../static/images/quiz/never.png" alt="Dry"> Almost never
             </label>
+            <button class="next-btn" disabled>Next</button>
         </div>
 
         <div class="question" data-question="q3">
@@ -74,10 +76,10 @@
                 <img src="../../static/images/quiz/more.png" alt="Combination"> Some areas need more, others feel greasy
             </label>
         </div>
-
+        <button id="finishQuizBtn" style="display: none;">Finish Quiz</button>
         <div id="result"></div>
 
-        <button id="getProductBtn" style="display: none;">Get Your Product</button>
+        
 
     </div>
     <script src="../../static/js/quiz/skincare_Quiz.js"></script>

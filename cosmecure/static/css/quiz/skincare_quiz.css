@@ -1,6 +1,5 @@
 body {
   font-family: Arial, sans-serif;
-  /* background: #ECE1CE; */
   background-image: url(../../images/quiz/bacground_img_skincare.png);
   background-repeat: no-repeats;
   background-position: center;
@@ -71,6 +70,37 @@ h1 {
 
 .option input:checked + img {
   border-color: #3d2513;
+}
+
+button {
+    padding: 12px 25px; 
+    border: none;
+    border-radius: 8px; 
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+    margin-left: 245px;
+    width: 40%; 
+    display: block; 
+}
+
+/* Next Button */
+.next-btn {
+    background-color: #785539;
+    color: white;
+}
+
+.next-btn:hover:not(:disabled) {
+    background-color: #3d2513;
+    
+}
+
+.next-btn:disabled {
+    background-color: transparent; /* Lighter color when disabled */
+    cursor: not-allowed;
+    opacity: 0.6;
 }
 
 #result {
