@@ -1,25 +1,29 @@
 body {
     font-family: Arial, sans-serif;
-    background: #ECE1CE;
     display: flex;
     justify-content: center;
+     background-image: url(../../images/quiz/Cosmetics/bg6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     align-items: center;
     min-height: 100vh;
     margin: 0;
 }
 
+
 .quiz-container {
-    background-color: #ffffff;
-    padding: 30px;
+    background-color: transparent;
+    box-shadow: 15px 15px 15px 15px rgba(93, 77, 77, 0.5);
+    padding: 60px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    max-width: 700px;
     width: 100%;
     text-align: center;
 }
 
 h1 {
-    color: #333;
+    color: black;
 }
 
 .question {
@@ -37,10 +41,10 @@ h1 {
     align-items: center;
     gap: 15px; 
     margin: 10px 0;
-    padding: 10px;
-    background-color: #ffffff;
+    padding: 8px;
+    background-color: transparent rgb(131, 128, 122);
     border-radius: 5px;
-    border: 1px solid #333;
+    border: 1.5px solid #1c1b1b;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -48,14 +52,14 @@ h1 {
 .option-label:hover {
     background-color:#3d2513;
     color: #ffffff;
+    scale: 1.1;
 }
 
-/* This is the key style for making the images circular */
 .option-image {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    object-fit: cover; /* Ensures the image fills the circular space */
+    object-fit: cover; 
     border: 2px solid transparent;
     transition: border-color 0.3s;
 }
@@ -64,22 +68,52 @@ h1 {
     font-weight: bold;
 }
 
-/* Hide the actual radio button */
+
 .option-label input[type="radio"] {
     display: none;
 }
 
-/* Change style when the option is selected */
+
 .option-label input[type="radio"]:checked + .option-image {
-    border-color: #007bff;
+    border-color: #6e562b;
 }
 
 .option-label input[type="radio"]:checked + .option-image + .option-text {
-    color: #007bff;
+    color: #6e562b;
 }
 
 .hidden {
     display: none;
+}
+
+button {
+    padding: 12px 25px; 
+    border: none;
+    border-radius: 8px; 
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+    margin-left: 245px;
+    width: 40%; 
+    display: block; 
+}
+
+.next-btn{
+    background-color: #785539;
+    color: white;
+}
+
+.next-btn:hover:not(:disabled) {
+    background-color: #3d2513;
+    
+}
+
+.next-btn:disabled {
+    background-color: transparent; 
+    cursor: not-allowed;
+    opacity: 0.6;
 }
 
 #result-container {
@@ -87,7 +121,7 @@ h1 {
 }
 
 #result-message {
-    color: #007bff;
+    color: #3d2513;
 }
 
 #result-button {

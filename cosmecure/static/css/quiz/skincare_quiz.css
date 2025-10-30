@@ -86,7 +86,7 @@ button {
     display: block; 
 }
 
-/* Next Button */
+
 .next-btn {
     background-color: #785539;
     color: white;
@@ -98,7 +98,7 @@ button {
 }
 
 .next-btn:disabled {
-    background-color: transparent; /* Lighter color when disabled */
+    background-color: transparent; 
     cursor: not-allowed;
     opacity: 0.6;
 }
@@ -112,10 +112,11 @@ button {
 
 
 #getProductBtn {
-    background-color:#3d2513; /* A nice green color */
+    background-color:#3d2513; 
     color: white;
     padding: 15px 32px;
     text-align: center;
+    width: 70%;
     display: block; 
     font-size: 16px;
     margin: 20px auto; 
