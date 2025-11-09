@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
 header {
    text-align: center;
   background: #93623d;
@@ -9,12 +16,12 @@ header {
     }
     header h1 {
       margin: 0;
-      font-size: 28px;
+      font-size: 2.5rem;
       font-weight: bold;
     }
     header p {
       margin-top: 10px;
-      font-size: 16px;
+      font-size: 1.1rem;
     }
     .controls {
       margin: 24px 0 10px 0;
@@ -31,7 +38,7 @@ header {
       align-items: center;
       border: 2px solid #666;
       border-radius: 5px;
-      margin-top: 20px;
+      margin-top: 10px;
       margin-bottom: 4px;
       padding: 14px 20px;
       position: sticky;  
@@ -51,7 +58,7 @@ header {
     .navbar ul li a {
       text-decoration: none;
       color: #8b5e34;
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: bold;
       padding: 8px 15px;
       border-radius: 10px;
@@ -71,7 +78,7 @@ header {
       background: #8b5e34;
       color: white;
       cursor: pointer;
-      font-size: 15px;
+      font-size: 0.95rem;
       transition: background 0.2s;
     }
     .filter-btn.active,
@@ -108,7 +115,7 @@ header {
      border-radius: 15px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       width: 360px;
-     height: 480px;
+     height: 500px;
      margin-top: 16px;
       text-align: center;
        overflow: hidden;
@@ -128,12 +135,12 @@ header {
       height: 320px;
     }
     .product-card h3 {
-      font-size: 17px;
+      font-size: 1.1rem;
       margin: 10px 0 5px;
       color: #151515;
     }
     .product-card p {
-      font-size: 14px;
+      font-size: 0.9rem;
       color: #1a1919;
       margin: 5px 0;
     }

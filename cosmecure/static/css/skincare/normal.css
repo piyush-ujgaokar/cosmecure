@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+   font-family: 'Segoe UI', sans-serif;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 .slider-container {
       position: relative;
       width: 100%;
-      height: 60vh; 
+      height: 65vh; 
       margin-bottom: 20px;
       overflow: hidden;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);

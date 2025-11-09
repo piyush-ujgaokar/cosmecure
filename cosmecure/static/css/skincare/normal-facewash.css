@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
  header {
        text-align: center;
   background: #93623d;
@@ -36,7 +43,7 @@
     .navbar ul li a {
       text-decoration: none;
       color: #8b5e34;
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: bold;
       padding: 8px 15px;
       border-radius: 20px;
@@ -63,7 +70,7 @@
       background: #8b5e34;
       color: white;
       cursor: pointer;
-      font-size: 15px;
+      font-size: 0.95rem;
       transition: background 0.2s;
     }
     .filter-btn.active,
@@ -129,12 +136,12 @@
 
     .product-card h3 {
       margin: 10px 0 5px;
-      font-size: 18px;
+      font-size: 1.1rem;
       color: #2e7d32;
     }
 
     .product-card p {
-      font-size: 14px;
+      font-size: 0.9rem;
       color: #666;
     }
 
