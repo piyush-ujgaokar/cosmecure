@@ -8,7 +8,7 @@ body {
 
 .navbar {
     background-color: #fff;
-    padding: 10px 20px;
+    padding: 30px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between; 
@@ -16,7 +16,7 @@ body {
 }
 
 .logo h1 {
-    color: #e91e63; 
+    color: #3d2513; 
     margin: 0;
 }
 
@@ -28,16 +28,18 @@ nav ul {
 }
 
 nav ul li a {
+    font-size: 25px;
     text-decoration: none;
     color: #333;
     padding: 10px 15px;
     display: block;
+    border-radius: 10px;
     transition: background-color 0.3s;
 }
 
 nav ul li a:hover, nav ul li a.active {
-    background-color: #ffe4e4;
-    color: #e91e63;
+    background-color: #cab590;
+    color: #3d2513;
 }
 
 /* Controls (Search and Sort) */
@@ -48,22 +50,19 @@ nav ul li a:hover, nav ul li a.active {
     border-radius: 4px;
 }
 
-/* --- Main Content Styling --- */
 main {
     padding: 20px;
 }
 
 .glam-heading {
     text-align: center;
-    color: #e91e63;
+    color: #785539;
     margin-bottom: 30px;
     font-size: 2em;
 }
 
-/* --- Product Grid and Card Styling --- */
 .product-grid {
     display: grid;
-    /* Creates a responsive grid of product cards */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
@@ -88,7 +87,7 @@ main {
     height: auto;
     border-radius: 4px;
     margin-bottom: 10px;
-    max-height: 150px; /* Limit image height */
+    max-height: 150px; 
     object-fit: cover;
 }
 
@@ -99,13 +98,13 @@ main {
 }
 
 .product-card p {
-    color: #e91e63;
+    color: #785539;
     font-weight: bold;
     margin-top: 10px;
 }
 
 .product-card button {
-    background-color: #e91e63;
+    background-color: #785539;
     color: white;
     border: none;
     padding: 8px 15px;
@@ -116,5 +115,5 @@ main {
 }
 
 .product-card button:hover {
-    background-color: #c2185b;
+    background-color: #785539;
 }
