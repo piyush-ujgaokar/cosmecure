@@ -3,37 +3,28 @@ const searchInput = document.getElementById('searchInput');
 const sortSelect = document.getElementById('sortSelect');
 const navLinks = document.querySelectorAll('.nav-link');
 
-// Collect all product card elements once on load
-// This automatically picks up the 30 products now.
 const allProductCards = Array.from(productGrid.querySelectorAll('.product-card'));
 
-
-// --- Filtering Functionality (Navbar) ---
 function filterProducts(category) {
-    // 1. Filter and show/hide the HTML elements
     allProductCards.forEach(card => {
         const productCategory = card.getAttribute('data-category');
         
         if (category === 'all' || productCategory === category) {
-            card.style.display = 'block'; // Show the product
+            card.style.display = 'block'; 
         } else {
-            card.style.display = 'none'; // Hide the product
+            card.style.display = 'none'; 
         }
     });
 
-    // 2. Clear Search input and reset Sort
     searchInput.value = '';
     sortSelect.value = 'default';
     
-    // 3. Update active state on navbar
     navLinks.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('data-category') === category) {
             link.classList.add('active');
         }
     });
-
-    // We don't render them here, we just show/hide them.
 }
 
 navLinks.forEach(link => {
@@ -44,8 +35,6 @@ navLinks.forEach(link => {
     });
 });
 
-
-// --- Search Functionality ---
 searchInput.addEventListener('input', (e) => {
     const searchTerm = e.target.value.toLowerCase();
     const activeCategory = document.querySelector('.nav-link.active')?.getAttribute('data-category') || 'all';
@@ -63,24 +52,17 @@ searchInput.addEventListener('input', (e) => {
         }
     });
     
-    // Re-apply sort if one is active on search results
     sortProducts(sortSelect.value);
 });
 
-
-// --- Sorting Functionality (A-Z, Z-A, Price) ---
 function sortProducts(criteria) {
-    // 1. Get only the currently visible cards
     let visibleCards = allProductCards.filter(card => card.style.display !== 'none');
     
-    // Stop if no sort is selected
     if (criteria === 'default') {
-        // If sorting is reset, re-apply the filter to return to original HTML order.
         filterProducts(document.querySelector('.nav-link.active').getAttribute('data-category'));
         return;
     }
     
-    // 2. Perform the actual sort based on criteria
     visibleCards.sort((a, b) => {
         const nameA = a.getAttribute('data-name');
         const nameB = b.getAttribute('data-name');
@@ -92,18 +74,15 @@ function sortProducts(criteria) {
         } else if (criteria === 'z-a') {
             return nameB.localeCompare(nameA);
         } else if (criteria === 'price-asc') {
-            return priceA - priceB; // Low to High Price
+            return priceA - priceB; 
         }
-        return 0; // No sort applied
+        return 0; 
     });
 
-    // 3. Re-append the sorted elements to the grid
-    // Appending existing DOM nodes automatically moves them.
     visibleCards.forEach(card => {
         productGrid.appendChild(card);
     });
     
-    // Hide the initially hidden cards again, in case search or filter was applied
     allProductCards.filter(card => card.style.display === 'none').forEach(card => {
         productGrid.appendChild(card);
     });
@@ -115,8 +94,7 @@ sortSelect.addEventListener('change', (e) => {
 });
 
 
-// --- Initialization ---
 document.addEventListener('DOMContentLoaded', () => {
-    // Start with 'all' active 
+
     filterProducts('all'); 
 });
