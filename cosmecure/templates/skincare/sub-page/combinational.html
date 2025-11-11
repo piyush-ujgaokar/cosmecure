@@ -1,149 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Combination Skin - Care Collection</title>
-  <link rel="stylesheet" href="../../static/css/skincare/normal.css">
+  <title>Combination Skin Care</title>
+  <link rel="stylesheet" href="../../../static/css/skincare/normal.css">
 </head>
-<body>
-<main>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="./combinationfacewash.html">Facewash</a></li>
-      <li><a href="./combinationsunscreen.html">Sunscreen</a></li>
-      <li><a href="./combinationmoisturizer.html">Moisturizer</a></li>
-      <li><a href="./combination.html" class="active">All-in-One</a></li>
-    </ul>
-  </nav>
 
-  <!-- Header -->
+<body>
+  <div class="slider-container">
+    <div class="slider" id="slider">
+      <div class="slide"><img src="../../../static/images/skincare/facewash/poster-1.webp" alt="Slide 1"></div>
+      <div class="slide"><img src="../../../static/images/skincare/sunscreen/poster-1.webp" alt="Slide 2"></div>
+      <div class="slide"><img src="../../../static/images/skincare/moisturizer/poster-1.webp" alt="Slide 3"></div>
+      <div class="slide"><img src="../../../static/images/skincare/facewash/poster-2.avif" alt="Slide 4"></div>
+    </div>
+    <button class="btn btn-left" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="btn btn-right" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+
   <header>
-    <h1>🌸 Combination Skin – All-in-One Care</h1>
-    <p>Perfectly balanced products to hydrate dry areas and control oil where needed</p>
+    <h1>🌸 Combination Skin Care</h1>
+    <p>Perfect balance for oily and dry zones — your complete care routine</p>
   </header>
 
-  <!-- Controls -->
-  <section class="controls">
-    <div>
-      <button class="filter-btn active" data-category="all">All</button>
-      <button class="filter-btn" data-category="facewash">Facewash</button>
-      <button class="filter-btn" data-category="sunscreen">Sunscreen</button>
-      <button class="filter-btn" data-category="moisturizer">Moisturizer</button>
-      <button class="filter-btn" data-category="herbal">Herbal</button>
-    </div>
+  <div class="category-links" style="text-align:center; margin: 2rem 0 1rem;">
+    <a href="../../../templates/skincare/combinationfacewash.html" class="btn" style="margin:0 0.5rem;">Facewash</a>
+    <a href="../../../templates/skincare/combinationsunscreen.html" class="btn" style="margin:0 0.5rem;">Sunscreen</a>
+    <a href="../../../templates/skincare/combinationmoisturizer.html" class="btn" style="margin:0 0.5rem;">Moisturizer</a>
+  </div>
 
-    <div class="search-sort-container">
-      <input type="text" id="searchBar" placeholder="Search products by name...">
-      <select id="sortOptions">
-        <option value="default">Sort By</option>
-        <option value="az">Name: A → Z</option>
-        <option value="za">Name: Z → A</option>
-        <option value="low-high">Price: Low → High</option>
-        <option value="high-low">Price: High → Low</option>
-      </select>
+  <div class="search-sort-container">
+    <input type="text" id="searchBar" placeholder="Search products by name...">
+    <select id="sortOptions">
+      <option value="default">Sort By</option>
+      <option value="az">Name: A → Z</option>
+      <option value="za">Name: Z → A</option>
+      <option value="low-high">Price: Low → High</option>
+      <option value="high-low">Price: High → Low</option>
+    </select>
+  </div>
+
+  <section class="products">
+    <div class="card-container" id="productContainer">
+
+      <!-- Facewash -->
+      <div class="card">
+        <img src="../../../static/images/skincare/Combination/facewash1.webp" alt="Balancing Facewash">
+        <h3>Balancing Gel Facewash</h3>
+        <p>Removes excess oil and hydrates dry areas — ideal for combination skin.</p>
+        <span>₹375</span>
+        <div class="btn-group">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../../../static/images/skincare/Combination/facewash2.webp" alt="Tea Tree Cleanser">
+        <h3>Tea Tree Cleanser</h3>
+        <p>Purifies oily T-zone while keeping cheeks moisturized and soft.</p>
+        <span>₹410</span>
+        <div class="btn-group">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Sunscreen -->
+      <div class="card">
+        <img src="../../../static/images/skincare/Combination/sunscreen1.webp" alt="Hydra Balance SPF 50">
+        <h3>Hydra Balance SPF 50</h3>
+        <p>Protects from sun damage without clogging pores — non-sticky formula.</p>
+        <span>₹499</span>
+        <div class="btn-group">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../../../static/images/skincare/Combination/sunscreen2.webp" alt="Matte Shield Sunscreen">
+        <h3>Matte Shield Sunscreen</h3>
+        <p>Controls shine and hydrates dry spots — balanced protection.</p>
+        <span>₹530</span>
+        <div class="btn-group">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Moisturizer -->
+      <div class="card">
+        <img src="../../../static/images/skincare/Combination/moisturizer1.webp" alt="Dual Action Moisturizer">
+        <h3>Dual Action Moisturizer</h3>
+        <p>Hydrates and balances oil control — perfect for combination skin types.</p>
+        <span>₹480</span>
+        <div class="btn-group">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../../../static/images/skincare/Combination/moisturizer2.webp" alt="Vitamin B5 Gel Cream">
+        <h3>Vitamin B5 Gel Cream</h3>
+        <p>Lightweight hydration with oil-control ingredients and soothing texture.</p>
+        <span>₹525</span>
+        <div class="btn-group">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Herbal / Organic -->
+      <div class="card">
+        <img src="../../../static/images/skincare/Combination/herbal1.webp" alt="Herbal Glow Cream">
+        <h3>Herbal Glow Cream</h3>
+        <p>Natural extracts balance and brighten skin tone for healthy glow.</p>
+        <span>₹460</span>
+        <div class="btn-group">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../../../static/images/skincare/Combination/herbal2.webp" alt="Neem Aloe Toner">
+        <h3>Neem Aloe Toner</h3>
+        <p>Refreshes and soothes — regulates oil while calming dryness.</p>
+        <span>₹320</span>
+        <div class="btn-group">
+          <button class="btn">Add to Cart</button>
+          <button class="btn buy-btn">Buy Now</button>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Product Grid -->
-  <div class="product-grid">
-
-    <!-- Facewash -->
-    <div class="product-card" data-category="facewash" data-price="350">
-      <img src="../../static/images/skincare/facewash/comb-1.webp" alt="Balancing Gel Facewash">
-      <h3>Balancing Gel Facewash</h3>
-      <p>Category: Facewash</p>
-      <p class="price">₹350</p>
-      <div class="button-group">
-        <button class="btn">Add to Cart</button>
-        <button class="btn">Buy Now</button>
-      </div>
-    </div>
-
-    <div class="product-card" data-category="facewash" data-price="420">
-      <img src="../../static/images/skincare/facewash/comb-2.webp" alt="Green Tea Cleanser">
-      <h3>Green Tea Cleanser</h3>
-      <p>Category: Facewash</p>
-      <p class="price">₹420</p>
-      <div class="button-group">
-        <button class="btn">Add to Cart</button>
-        <button class="btn">Buy Now</button>
-      </div>
-    </div>
-
-    <!-- Sunscreen -->
-    <div class="product-card" data-category="sunscreen" data-price="499">
-      <img src="../../static/images/skincare/sunscreen/comb-1.webp" alt="Hydra Shield Sunscreen SPF 50">
-      <h3>Hydra Shield Sunscreen SPF 50</h3>
-      <p>Category: Sunscreen</p>
-      <p class="price">₹499</p>
-      <div class="button-group">
-        <button class="btn">Add to Cart</button>
-        <button class="btn">Buy Now</button>
-      </div>
-    </div>
-
-    <div class="product-card" data-category="sunscreen" data-price="560">
-      <img src="../../static/images/skincare/sunscreen/comb-2.webp" alt="Matte Finish Daily Protector">
-      <h3>Matte Finish Daily Protector</h3>
-      <p>Category: Sunscreen</p>
-      <p class="price">₹560</p>
-      <div class="button-group">
-        <button class="btn">Add to Cart</button>
-        <button class="btn">Buy Now</button>
-      </div>
-    </div>
-
-    <!-- Moisturizer -->
-    <div class="product-card" data-category="moisturizer" data-price="480">
-      <img src="../../static/images/skincare/moisturizer/comb-1.webp" alt="Balancing Day Moisturizer">
-      <h3>Balancing Day Moisturizer</h3>
-      <p>Category: Moisturizer</p>
-      <p class="price">₹480</p>
-      <div class="button-group">
-        <button class="btn">Add to Cart</button>
-        <button class="btn">Buy Now</button>
-      </div>
-    </div>
-
-    <div class="product-card" data-category="moisturizer" data-price="520">
-      <img src="../../static/images/skincare/moisturizer/comb-2.webp" alt="Lightweight Hydration Cream">
-      <h3>Lightweight Hydration Cream</h3>
-      <p>Category: Moisturizer</p>
-      <p class="price">₹520</p>
-      <div class="button-group">
-        <button class="btn">Add to Cart</button>
-        <button class="btn">Buy Now</button>
-      </div>
-    </div>
-
-    <!-- Herbal Mix -->
-    <div class="product-card" data-category="herbal" data-price="450">
-      <img src="../../static/images/skincare/herbal/comb-1.webp" alt="Aloe Neem Fusion Cream">
-      <h3>Aloe Neem Fusion Cream</h3>
-      <p>Category: Herbal Moisturizer</p>
-      <p class="price">₹450</p>
-      <div class="button-group">
-        <button class="btn">Add to Cart</button>
-        <button class="btn">Buy Now</button>
-      </div>
-    </div>
-
-    <div class="product-card" data-category="herbal" data-price="490">
-      <img src="../../static/images/skincare/herbal/comb-2.webp" alt="Tulsi Glow Sunscreen">
-      <h3>Tulsi Glow Sunscreen</h3>
-      <p>Category: Herbal Sunscreen</p>
-      <p class="price">₹490</p>
-      <div class="button-group">
-        <button class="btn">Add to Cart</button>
-        <button class="btn">Buy Now</button>
-      </div>
-    </div>
-
-  </div>
-</main>
-
-<script src="../../../static/js/skincare/normal.js"></script>
+  <script src="../../../static/js/skincare/normal.js"></script>
 </body>
+
 </html>
