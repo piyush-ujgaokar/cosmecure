@@ -113,7 +113,7 @@
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   width: 360px;
-  height: 490px;
+  height: 520px;
   padding-top: 3px;
   padding-bottom: 28px;
   margin-bottom: 10px;
@@ -132,6 +132,7 @@
     .product-card img {
       max-width: 100%;
       border-radius: 8px;
+      object-fit: cover;
     }
 
     .product-card h3 {
@@ -153,7 +154,7 @@
 
  .product-card.btn {
     padding: 10px 15px;
-       margin-top: 6px;
+       margin-top: 10px;
        border: none;
        border-radius: 6px;
        background: #3d2513;
@@ -173,6 +174,7 @@
   color: #fff;
   border: none;
   padding: 0.6rem 1.2rem;
+  margin-top: 10px;
   margin-bottom: 16px;
   border-radius: 6px;
   cursor: pointer;

@@ -133,6 +133,7 @@ header {
       max-width: 100%;
       border-radius: 8px;
       height: 320px;
+      object-fit: contain;
     }
     .product-card h3 {
       font-size: 1.1rem;
