@@ -10,6 +10,7 @@ header {
   background: #93623d;
   color: white;
   padding: 2rem 1rem;
+  padding-top: 10px;
   padding-bottom: 12px;
   margin-bottom: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -68,18 +69,16 @@ header {
       background: #8b5e34;
       color: #ffffff;
     }
-
-
 .filter-btn {
   margin: 5px;
   padding: 8px 18px;
   border: none;
   border-radius: 8px;
-      background: #8b5e34;
-      color: white;
-      cursor: pointer;
-      font-size: 0.95rem;
-      transition: background 0.2s;
+  background: #8b5e34;
+  color: white;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
     }
     .filter-btn.active,
     .filter-btn:hover {
@@ -103,23 +102,23 @@ header {
 
 .product-grid {
        display: flex;
-      justify-content: center;
-         flex-wrap: wrap;
-         gap: 1.5rem;
+       justify-content: center;
+      flex-wrap: wrap;
+       gap: 1.5rem;
        padding: 0 2rem 2rem;
-        margin-bottom: 2rem;
+      margin-bottom: 2rem;
       }
 
     .product-card {
       background: #fff;
-     border-radius: 15px;
+      border-radius: 15px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      width: 360px;
-     height: 500px;
-     margin-top: 16px;
-      text-align: center;
+       width: 360px;
+       height: 500px;
+       margin-top: 16px;
+       text-align: center;
        overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+       transition: transform 0.3s ease, box-shadow 0.3s ease;
        display: flex;
        flex-direction: column;
        justify-content: flex-start;
@@ -138,7 +137,7 @@ header {
     .product-card h3 {
       font-size: 1.1rem;
       margin: 10px 0 5px;
-      color: #151515;
+      color: #2e7d32;
     }
     .product-card p {
       font-size: 0.9rem;
