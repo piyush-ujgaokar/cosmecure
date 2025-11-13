@@ -10,6 +10,15 @@ const products = {
     balm: "Tinted Lip Balm, and a Hydrating Lip Mask."
 };
 
+const styleUrls = {
+    'GLAM': '/glam/',
+    'LUMINOUS': '/luminous/',
+    'NATURAL': '/natural/',
+    'BLENDED': '/natural/', // fallback
+    'BALANCED': '/natural/', // fallback
+    'CLASSIC': '/natural/' // fallback
+};
+
 const questions = document.querySelectorAll(".question");
 const resultContainer = document.getElementById("result-container"); 
 const resultMessage = document.getElementById("result-message");
@@ -73,31 +82,40 @@ function showResult() {
         }
     });
 
-    
-    let finalStyleWord = 'BALANCED'; 
+
+    let finalStyleWord = 'BALANCED';
     let maxScore = -1;
 
     const scoresArray = Object.entries(styleScores);
-    
+
     scoresArray.forEach(([, score]) => {
         if (score > maxScore) {
             maxScore = score;
         }
     });
-    
+
     const winningStyles = scoresArray.filter(([, score]) => score === maxScore);
 
     if (winningStyles.length === 1 && maxScore > 0) {
-        finalStyleWord = winningStyles[0][0]; 
+        finalStyleWord = winningStyles[0][0];
     } else if (winningStyles.length > 1) {
-        finalStyleWord = 'BLENDED'; 
+        finalStyleWord = 'BLENDED';
     } else {
-        finalStyleWord = 'CLASSIC'; 
+        finalStyleWord = 'CLASSIC';
     }
-    
+
     finalStyleWord = finalStyleWord.charAt(0).toUpperCase() + finalStyleWord.slice(1).toLowerCase();
 
     resultMessage.innerHTML = `Your makeup style is **${finalStyleWord}**!`;
+
+    // Add event listener to the "Get Your Products" button
+    const resultButton = document.getElementById("result-button");
+    if (resultButton) {
+        resultButton.addEventListener("click", () => {
+            const url = styleUrls[finalStyleWord.toUpperCase()] || '/natural/';
+            window.location.href = url;
+        });
+    }
 }
 
 

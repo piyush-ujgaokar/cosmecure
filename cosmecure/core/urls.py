@@ -9,7 +9,10 @@ urlpatterns = [
     path('skincare/',include('skincare_quiz.urls')),
     path('knowmore/', views.knowmore_view, name='knowmore'),
     path('cosmetic/',include('cosmetic_quiz.urls')),
-    path('buy-now/', views.buy_now_view, name='buy_now'),
+    path('glam/', views.glam_view, name='glam'),
+    path('luminous/', views.luminous_view, name='luminous'),
+    path('natural/', views.natural_view, name='natural'),
 
-    
+
+
 ]
