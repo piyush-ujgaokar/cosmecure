@@ -246,3 +246,75 @@ h2 {
   margin-top: auto;
   margin-bottom: 1rem;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem 0.5rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .slider-container {
+    height: 50vh;
+  }
+
+  .category-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .category-links a.btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  .search-sort-container {
+    margin-left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card-container {
+    padding: 0 1rem 1rem;
+    gap: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    padding-top: 8px;
+  }
+
+  .card img {
+    height: 300px;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.85rem;
+  }
+
+  .product-card .btn,
+  .product-card .buy-btn,
+  .card .btn,
+  .card .buy-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .product-card .button-group,
+  .card div[style*="display: flex"] {
+    gap: 8px;
+  }
+}
